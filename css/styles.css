@@ -126,6 +126,8 @@ body {
 }
 
 .usage__bloc {
+  text-decoration: none;
+  color: black;
   position: relative;
   max-width: 350px;
   background-color: #f6f6f6;
@@ -148,7 +150,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
 }
 
 .usage__bloc:hover {
