@@ -2,10 +2,13 @@
              primaire #9356DC secondaire #FF79DA tertiaire #99E2D0
                            Texte Roboto
 **********************************************************************************/
-@import url("http://fonts.cdnfonts.com/css/shrikhand");
+@import url("https://fonts.cdnfonts.com/css/shrikhand");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -29,6 +32,7 @@ body {
 
 .entete__logo {
   max-width: 200px;
+  margin: 20px;
 }
 
 .entete__logo--img {
@@ -65,7 +69,6 @@ body {
 }
 
 .search {
-  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +111,6 @@ body {
 }
 
 .usage {
-  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +120,9 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 20px;
 }
 
@@ -126,13 +131,14 @@ body {
 }
 
 .usage__bloc {
+  width: 350px;
   text-decoration: none;
   color: black;
   position: relative;
-  max-width: 350px;
+  max-width: 285px;
   background-color: #f6f6f6;
-  padding: 20px;
-  margin: 0 10px 0 20px;
+  padding-left: 20px;
+  margin: 0 10px 30px 20px;
   border: none;
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 10px #e8e8e8;
@@ -150,10 +156,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .usage__bloc:hover {
   background: #fff3fc;
+  color: #9356DC;
+}
+
+.usage__bloc--texte:hover {
+  color: black;
 }
 
 .usage__bloc--puces {
@@ -168,18 +181,196 @@ body {
 .usage__bloc--icone {
   background: transparent;
   font-size: 2em;
-  color: grey;
 }
 
 .usage__bloc--texte {
   font-size: 1.1em;
   font-weight: bold;
   margin: 0 0 0 5px;
+  padding: 30px 30px 30px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-@media screen and (max-width: 375px) {
-  .usage, .search {
-    max-width: 100%;
+.restos {
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.restos__titre {
+  margin: 15px 0 30px 0;
+}
+
+.restos__bloc {
+  width: 320px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 10px #d1d1d1;
+          box-shadow: 0 5px 10px #d1d1d1;
+  margin: 0 10px 20px 0;
+}
+
+.restos__bloc--image {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 60%;
+     object-position: center 60%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+.restos__bloc--titre {
+  margin: 5px 0 5px 10px;
+  font-size: 1.2em;
+}
+
+.restos__bloc--nom {
+  margin: 0 0 15px 10px;
+}
+
+.restos__bloc--icone {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  font-size: 1.4em;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "entete entete" "search search" "usage usage" "restos restos";
+  }
+  .entete {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: entete;
+  }
+  .search {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: search;
+  }
+  .usage {
+    margin-top: 20px;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: usage;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 30px 100px;
+        grid-template-rows: 30px 100px;
+        grid-template-areas: "titre titre titre" "shop menu degust";
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .usage__bloc {
+    margin-left: 50px;
+  }
+  .titre {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titre;
+  }
+  .shop {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: shop;
+  }
+  .menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: menu;
+  }
+  .degust {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: degust;
+  }
+  .restos {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: restos;
+  }
+  .restos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 50px 280px 280px;
+        grid-template-rows: 50px 280px 280px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+        grid-template-areas: "title title" "palette note" "french sens";
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restos__bloc {
+    width: 90%;
+    margin-left: 50px;
+  }
+  .title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .palette {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: palette;
+  }
+  .note {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: note;
+  }
+  .french {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: french;
+  }
+  .sens {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: sens;
   }
 }
 /*# sourceMappingURL=styles.css.map */
