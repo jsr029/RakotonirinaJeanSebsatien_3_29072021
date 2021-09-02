@@ -25,6 +25,10 @@ body {
   padding: 0;
 }
 
+.container h1 {
+  visibility: hidden;
+}
+
 .entete {
   max-width: 100%;
   display: -webkit-box;
