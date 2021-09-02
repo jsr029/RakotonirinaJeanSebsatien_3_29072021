@@ -340,6 +340,7 @@ body {
   background: white;
 }
 
+/* Progression heart */
 @-webkit-keyframes monte {
   from {
     -webkit-transform: translate(0, 0);
@@ -350,7 +351,6 @@ body {
             transform: translate(0, -21px);
   }
 }
-
 @keyframes monte {
   from {
     -webkit-transform: translate(0, 0);
