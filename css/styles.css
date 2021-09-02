@@ -4,7 +4,6 @@
 **********************************************************************************/
 @import url("https://fonts.cdnfonts.com/css/shrikhand");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("../libs/variables.scss");
 body {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -210,6 +209,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+}
+
+.restos a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .restos__titre {
@@ -480,8 +484,7 @@ body {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 50px 280px 280px;
         grid-template-rows: 50px 280px 280px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
         grid-template-areas: "title title" "palette note" "french sens";
     -ms-flex-pack: distribute;
         justify-content: space-around;

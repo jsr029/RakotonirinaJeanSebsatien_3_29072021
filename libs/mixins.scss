@@ -1,0 +1,3 @@
+@mixin scaler($size:1.05) {
+    transform: scale($size);
+}

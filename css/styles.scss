@@ -5,11 +5,9 @@
 **********************************************************************************/
 @import url('https://fonts.cdnfonts.com/css/shrikhand');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('../libs/variables.scss');
+@import '../libs/variables.scss';
+@import '../libs/mixins.scss';
 
-$primary : #9356DC;
-$secondary : #FF79DA;
-$ternary : #99E2D0;
 
 body{
     position: relative;
@@ -69,7 +67,7 @@ body{
         padding: 0 30px 20px 30px;
     }
     &__button{
-        background: linear-gradient(#FF79DA,#9356DC) ;
+        background: linear-gradient($secondary, $primary) ;
         padding: 20px;
         border-radius: 30px; 
         color: white; 
@@ -141,6 +139,9 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    a:hover{
+        @include scaler;
+    }
     &__titre{
         margin: 15px 0 30px 0;
     }
@@ -305,8 +306,7 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px 280px 280px;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-row-gap: 40px;
         grid-template-areas: 
         "title title"
         "palette note"
