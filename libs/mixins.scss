@@ -1,3 +1,19 @@
 @mixin scaler($size:1.05) {
     transform: scale($size);
 }
+@mixin pulsar {
+    @keyframes pulse{
+        0%{
+            box-shadow: 0 0 0 0 $secondary , 0 0 0 0 $secondary;
+        }
+        40%{
+            box-shadow: 0 0 0 50px $primary , 0 0 0 0 $ternary;
+        }
+        80%{
+            box-shadow: 0 0 0 50px $primary , 0 0 0 30px $primary;
+        }
+        100%{
+            box-shadow: 0 0 0 0 $primary , 0 0 0 30px $primary;
+        }
+    }
+}

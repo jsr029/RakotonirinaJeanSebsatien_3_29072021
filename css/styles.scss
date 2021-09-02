@@ -75,8 +75,10 @@ body{
         border:  none;
         @extend %shadowButton;
         cursor: pointer;
+        animation: pulse 1.7s ease-in-out infinite
     }
 }
+        @include pulsar;
 .usage{
     display: flex;
     flex-direction: column;
