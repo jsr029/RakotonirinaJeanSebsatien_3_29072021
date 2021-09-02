@@ -273,6 +273,15 @@ body{
         text-decoration: none;
         color: white;
     }
+    &__resto{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        i{
+            margin-right: 10px;
+        }
+    }
 }
 
 @media screen and (min-width:1024px) {
