@@ -327,7 +327,11 @@ body {
 
 .restos__bloc--plein {
   z-index: 200;
-  color: #9356DC;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restos__bloc--cache {
@@ -378,13 +382,13 @@ body {
   background-color: black;
   color: white;
   font-size: 1rem;
-  opacity: 0.9;
+  opacity: 0.95;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 2000;
   -webkit-animation: display 5s linear 0.3s forwards;
           animation: display 5s linear 0.3s forwards;
 }
