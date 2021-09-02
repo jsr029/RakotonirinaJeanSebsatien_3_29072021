@@ -325,7 +325,7 @@ body {
   background-color: black;
   color: white;
   font-size: 2.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
   position: fixed;
   top: 0;
   left: 0;
@@ -343,13 +343,9 @@ body {
 }
 
 .page__loader {
-  border-top: 16px solid blue;
-  border-right: 16px solid green;
-  border-bottom: 16px solid red;
-  border-left: 16px solid pink;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
+  background: url("../img/loader/loader.gif") center center;
   -webkit-animation: spin 450ms linear infinite;
           animation: spin 450ms linear infinite;
 }
@@ -366,23 +362,23 @@ body {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
   }
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
   }
 }
 

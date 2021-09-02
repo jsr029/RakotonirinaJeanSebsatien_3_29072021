@@ -212,7 +212,7 @@ body{
     background-color: black;
     color: white;
     font-size: 2.5rem;
-    opacity: 0.8;
+    opacity: 0.9;
     position: fixed;
     top:0;left: 0;right:0;bottom: 0;
     z-index: 1000;
@@ -223,13 +223,9 @@ body{
         font-size: 2.5rem;
     }
     &__loader{
-        border-top: 16px solid blue;
-        border-right: 16px solid green;
-        border-bottom: 16px solid red;
-        border-left: 16px solid pink;
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
+        background: url('../img/loader/loader.gif') center center;
         animation: spin 450ms linear infinite;
     }}
 
@@ -242,8 +238,8 @@ body{
     display: none;
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { transform: translate(0,0); }
+  100% { transform: translate(0, 20px); }
 }
 
 @keyframes display {
