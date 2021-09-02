@@ -202,10 +202,7 @@ body{
     }
 }
 
-@keyframes monte {
-    from{transform: translate(0,0);}
-    to{transform: translate(0,-21px);}
-}
+@include progressHeart;
 
 /*********** loader test ***********/
 .page{
