@@ -4,6 +4,16 @@
 **********************************************************************************/
 @import url("https://fonts.cdnfonts.com/css/shrikhand");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.search__button, .restos__bloc {
+  -webkit-box-shadow: 0 5px 10px #d1d1d1;
+          box-shadow: 0 5px 10px #d1d1d1;
+}
+
+.restos a:hover {
+  -webkit-box-shadow: 0 5px 10px black;
+          box-shadow: 0 5px 10px black;
+}
+
 body {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -106,8 +116,6 @@ body {
   color: white;
   font-weight: bold;
   border: none;
-  -webkit-box-shadow: 0 5px 10px #d1d1d1;
-          box-shadow: 0 5px 10px #d1d1d1;
   cursor: pointer;
 }
 
@@ -164,6 +172,8 @@ body {
 .usage__bloc:hover {
   background: #fff3fc;
   color: #9356DC;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .usage__bloc--texte:hover {
@@ -227,8 +237,6 @@ body {
   position: relative;
   background-color: white;
   border-radius: 15px;
-  -webkit-box-shadow: 0 5px 10px #d1d1d1;
-          box-shadow: 0 5px 10px #d1d1d1;
   margin: 0 10px 20px 0;
 }
 

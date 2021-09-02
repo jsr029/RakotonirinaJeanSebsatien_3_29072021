@@ -1,3 +1,11 @@
 $primary : #9356DC;
 $secondary : #FF79DA;
 $ternary : #99E2D0;
+
+%shadowButton{
+    box-shadow: 0 5px 10px #d1d1d1;
+}
+
+%shadowDarker{
+    box-shadow: 0 5px 10px black;
+}
