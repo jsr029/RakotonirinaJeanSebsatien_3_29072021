@@ -4,7 +4,9 @@
 **********************************************************************************/
 @import url("https://fonts.cdnfonts.com/css/shrikhand");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("../libs/variables.scss");
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
 }
 
@@ -264,8 +266,8 @@ body {
 }
 
 .restos__bloc--nom:hover > .restos__bloc--cache {
-  -webkit-animation: monte 4s linear 0s;
-          animation: monte 4s linear 0s;
+  -webkit-animation: monte 2s linear 0s;
+          animation: monte 2s linear 0s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -278,48 +280,6 @@ body {
 .restos__bloc--cache {
   z-index: 300;
   background: white;
-}
-
-/*****************************test coeur**************************/
-.test {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  margin: 0  auto;
-}
-
-.test .plain .plein {
-  position: absolute;
-  top: 2px;
-  left: 1px;
-  font-size: 1.3em;
-  color: #9356DC;
-  z-index: 200;
-}
-
-.test .cache {
-  position: absolute;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background: white;
-  z-index: 300;
-}
-
-.test .empty .vide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.5em;
-  z-index: 400;
-}
-
-.test:hover > .cache {
-  -webkit-animation: monte 4s linear 0s;
-          animation: monte 4s linear 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes monte {
@@ -344,9 +304,114 @@ body {
   }
 }
 
-/**********************fin test coeur*****************/
+/*********** loader test ***********/
+.page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-animation: display 5s linear 0.3s forwards;
+          animation: display 5s linear 0.3s forwards;
+}
+
+.page h2 {
+  width: 120px;
+  height: 30px;
+  font-size: 2.5rem;
+}
+
+.page__loader {
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 450ms linear infinite;
+          animation: spin 450ms linear infinite;
+}
+
+.page:before {
+  content: "";
+  display: block;
+}
+
+.page:after {
+  content: "";
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes display {
+  from {
+    display: block;
+    visibility: visible;
+  }
+  to {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes display {
+  from {
+    display: block;
+    visibility: visible;
+  }
+  to {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/*********fin loader ******************/
 @media screen and (min-width: 1024px) {
   .container {
+    position: relative;
     max-width: 1440px;
     margin: auto;
     display: -ms-grid;
