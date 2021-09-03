@@ -24,7 +24,7 @@ body{
     justify-content: center;
     align-items: center;
         h1{
-            visibility: hidden; 
+            display: none;
         }
         &__logo{
         max-width: 200px;

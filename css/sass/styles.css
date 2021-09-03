@@ -44,7 +44,7 @@ body {
 }
 
 .entete h1 {
-  visibility: hidden;
+  display: none;
 }
 
 .entete__logo {
