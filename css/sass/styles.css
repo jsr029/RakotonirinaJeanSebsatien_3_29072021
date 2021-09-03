@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********************* couleurs et texte******************************************
              primaire #9356DC secondaire #FF79DA tertiaire #99E2D0
                            Texte Roboto
@@ -25,10 +26,6 @@ body {
   padding: 0;
 }
 
-.container h1 {
-  visibility: hidden;
-}
-
 .entete {
   max-width: 100%;
   display: -webkit-box;
@@ -44,6 +41,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.entete h1 {
+  visibility: hidden;
 }
 
 .entete__logo {
@@ -125,6 +126,10 @@ body {
   cursor: pointer;
   -webkit-animation: pulse 1.7s ease-in-out infinite;
           animation: pulse 1.7s ease-in-out infinite;
+}
+
+.search__button:hover {
+  background: #ff83dd;
 }
 
 @-webkit-keyframes pulse {
@@ -228,6 +233,8 @@ body {
 
 .usage__bloc--puces {
   position: absolute;
+  width: 15px;
+  text-align: center;
   left: -15px;
   padding: 10px;
   background-color: #9356DC;
@@ -238,6 +245,7 @@ body {
 .usage__bloc--icone {
   background: transparent;
   font-size: 2em;
+  margin: 0 0 0 5px;
 }
 
 .usage__bloc--texte {
@@ -370,21 +378,6 @@ body {
 /*********** loader test ***********/
 .page {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: black;
   color: white;
   font-size: 1rem;
@@ -399,16 +392,51 @@ body {
           animation: display 5s linear 0.3s forwards;
 }
 
-.page h2 {
+.page__bloc {
+  width: 350px;
+  position: absolute;
+  /* postulat de départ */
+  top: 50%;
+  left: 50%;
+  /* à 50%/50% du parent référent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* décalage de 50% de sa propre taille */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page__bloc h2 {
   height: 30px;
 }
 
-.page__loader {
+.page__bloc--loader {
   width: 180px;
   height: 180px;
+  margin: 0;
+  padding: 0;
   background: url("../img/loader/loader.gif") center center;
   -webkit-animation: spin 450ms linear infinite;
           animation: spin 450ms linear infinite;
+}
+
+.page__bloc--loader img {
+  width: 180px;
+  margin: 0;
+  padding: 0;
 }
 
 .page:before {

@@ -6,8 +6,8 @@
 @import url('https://fonts.cdnfonts.com/css/shrikhand');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import '../libs/variables.scss';
-@import '../libs/mixins.scss';
+@import './libs/variables.scss';
+@import './libs/mixins.scss';
 
 body{
     position: relative;
@@ -17,17 +17,15 @@ body{
     margin: 0;
     padding: 0; 
 }
-.container{
-    h1{
-        visibility: hidden;
-    }
-}
 .entete{
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+        h1{
+            visibility: hidden; 
+        }
         &__logo{
         max-width: 200px;
         margin: 20px;
@@ -81,7 +79,10 @@ body{
         border:  none;
         @extend %shadowButton;
         cursor: pointer;
-        animation: pulse 1.7s ease-in-out infinite
+        animation: pulse 1.7s ease-in-out infinite;
+        &:hover{
+            background: lighten($secondary, 2%); 
+        }
     }
 }
         @include pulsar;
@@ -121,6 +122,8 @@ body{
         }
         &--puces{
             position: absolute;
+            width: 15px;
+            text-align: center;
             left: -15px;
             padding: 10px;
             background-color: $primary;
@@ -130,6 +133,7 @@ body{
         &--icone{
             background: transparent;
             font-size: 2em;
+            margin: 0 0 0 5px;
          }
         &--texte{
             font-size: 1.1em;
@@ -213,11 +217,6 @@ body{
 /*********** loader test ***********/
 .page{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: center;
     background-color: black;
     color: white;
     font-size: 1rem;
@@ -226,15 +225,35 @@ body{
     top:0;left: 0;right:0;bottom: 0;
     z-index: 2000;
     animation: display 5s linear 0.3s forwards;
-    h2{
-        height: 30px;
+    &__bloc{
+        width: 350px;
+        position: absolute; /* postulat de départ */
+        top: 50%; left: 50%; /* à 50%/50% du parent référent */
+        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        h2{
+            height: 30px;
+        }
+        &--loader{
+            width: 180px;
+            height: 180px;
+            margin: 0;
+            padding: 0;
+            background: url('../img/loader/loader.gif') center center;
+            animation: spin 450ms linear infinite;
+            img{
+                width: 180px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
     }
-    &__loader{
-        width: 180px;
-        height: 180px;
-        background: url('../img/loader/loader.gif') center center;
-        animation: spin 450ms linear infinite;
-    }}
+}
 
 .page:before{
     content: "";
