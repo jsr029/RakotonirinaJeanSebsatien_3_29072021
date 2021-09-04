@@ -10,8 +10,14 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .french {
   max-width: 100%;
+  background: #f6f6f6;
 }
 
 .french__bg {
@@ -19,7 +25,7 @@ body {
   max-width: 100%;
 }
 
-.french__bg h1 {
+.french__bg--top {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -37,10 +43,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #f6f6f6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 20px 0 20px 0;
+}
+
+.french__bg--top h2 {
   font-family: "shrikhand", cursive;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  background: white;
+  margin-left: 15px;
+}
+
+.french__bg--top .heart {
+  margin-right: 18px;
+  font-size: 1.4em;
+}
+
+.french__bg--top .heart .heart-vide {
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+  width: 23px;
+  height: 23px;
+  font-size: 1.2em;
+}
+
+.french__bg--top .heart .heart-vide {
+  z-index: 400;
+}
+
+.french__bg--top .heart .heart-plein {
+  position: absolute;
+  bottom: 25px;
+  right: 33px;
+  width: 25px;
+  height: 23px;
+  font-size: 1.2em;
+  z-index: 200;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.french__bg--top .heart .heart-cache {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  width: 30px;
+  height: 23px;
+  font-size: 1.2em;
+  z-index: 300;
+  background: #f6f6f6;
+}
+
+.french__bg--top .heart:hover > .heart-cache {
+  -webkit-animation: monte 2s linear 0s;
+          animation: monte 2s linear 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .french__bg img {
@@ -50,5 +112,36 @@ body {
      object-fit: cover;
   -o-object-position: center 60%;
      object-position: center 60%;
+}
+
+/* Progression heart */
+@-webkit-keyframes monte {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(0, -21px);
+            transform: translate(0, -21px);
+  }
+}
+@keyframes monte {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(0, -21px);
+            transform: translate(0, -21px);
+  }
+}
+
+.menus {
+  width: 100%;
+  margin: 15px;
+}
+
+.menus .entrees__bloc {
+  background: white;
 }
 /*# sourceMappingURL=french.css.map */
