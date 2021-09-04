@@ -1,0 +1,26 @@
+.pieds{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 100%;
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+    h2{
+        font-family: "shrikhand", cursive;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    &__resto{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
