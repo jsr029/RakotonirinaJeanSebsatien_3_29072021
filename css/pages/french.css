@@ -257,7 +257,7 @@ a {
   transition: opacity 3s, visibility 4s, right 2s;
 }
 
-.menus .entrees__bloc:hover .entrees__bloc--icone {
+.menus .entrees__bloc--titre:hover + .entrees__bloc--icone {
   position: relative;
   right: 0;
   visibility: visible;
@@ -288,6 +288,40 @@ a {
   to {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menus .entrees {
+    width: 380px;
+  }
+  .menus .entrees__bloc {
+    width: 380px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menus .entrees__bloc--titre {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 /*# sourceMappingURL=french.css.map */

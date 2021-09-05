@@ -169,7 +169,7 @@ a{
                 border-bottom-right-radius: 20px;
                 transition: opacity 3s, visibility 4s, right 2s;
             }
-            &:hover .entrees__bloc--icone{
+            &--titre:hover + .entrees__bloc--icone{
                 position: relative;
                 right: 0;
                 visibility: visible;
@@ -184,4 +184,28 @@ a{
 @keyframes icone {
     from{transform: rotate(180deg);}
     to{transform: rotate(0);}
+}
+@media screen and (min-width:1024px){
+    .menus{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        .entrees{
+            width: 380px;
+                &__bloc{
+                    width: 380px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                    &--titre{
+                    max-width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
 }
