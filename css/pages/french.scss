@@ -3,16 +3,21 @@
 @import '../sass/libs/variables.scss';
 @import '../sass/libs/mixins.scss';
 body{
+    width: 100%;
     position: relative;
     font-family: "Roboto", sans-serif;
 } 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0; 
 }
 a{
     text-decoration: none;
     color: black;
+}
+.container{
+    width: 100%;
 }
 .french{
     max-width: 100%;
@@ -89,11 +94,79 @@ a{
 /* Progression heart */
 @include progressHeart;
 .menus{
-    width: 100%;
-    margin: 15px;
+    width: 95%;
+    margin: auto;
     .entrees{
         &__bloc{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             background: white;
+            margin: 15px 5px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px darken(#f6f6f6, 10%);
+            overflow: hidden;
+            &--titre{
+                width: 100%;
+                padding: 30px;
+                h3{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                span{
+                    margin-right: 10px;
+                }
+            }
+            &--prix{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+                align-items: center;
+                column-gap: 20px;
+            }
+            &--icone{
+                position: absolute;
+                right: -100px;
+                opacity: 0;
+                visibility: hidden;
+                width: 102px;
+                height: 102px;
+                padding: 32px;
+                font-size: 1.4em;
+                background-color: $ternary;
+                color: white;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                transition: opacity 3s, visibility 4s, right 2s;
+            }
+            &:hover .entrees__bloc--icone{
+                position: relative;
+                right: 0;
+                visibility: visible;
+                opacity: 1;
+            }            
+            &:hover .icone{
+                animation: icone 1s linear 0.3s forwards;
+            }
+            &--icone:before{
+                content: "";
+                display: none;
+                right: -100px;
+            }
+            &--icone:after{
+                content: "";
+                display: inline-block;
+                right: 0;
+            }
         }
     }
+}
+@keyframes icone {
+    from{transform: rotate(180deg);}
+    to{transform: rotate(0);}
 }
