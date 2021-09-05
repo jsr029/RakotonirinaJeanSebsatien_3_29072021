@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import '../sass/libs/variables.scss';
-@import '../sass/libs/mixins.scss';
+@import '../css/sass/libs/variables.scss';
+@import '../css/sass/libs/mixins.scss';
 body{
     width: 100%;
     position: relative;
@@ -36,6 +36,7 @@ a{
 .french{
     max-width: 100%;
     background: #f6f6f6;
+    padding-bottom: 10px;
     &__bg{
         position: relative;
         max-width: 100%;
@@ -185,7 +186,7 @@ a{
     from{transform: rotate(180deg);}
     to{transform: rotate(0);}
 }
-@media screen and (min-width:1024px){
+
 .container{
     width: 100%;
     &__button{
@@ -209,9 +210,10 @@ a{
                 box-shadow: 0 5px 15px darken(#cecece, 20%);
                 background: lighten($secondary, 2%); 
             }
-        }
+        } 
     }
 }    
+@media screen and (min-width:1024px){
 .menus{
     display: flex;
     flex-direction: row;
