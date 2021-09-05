@@ -292,6 +292,35 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .container__button {
+    text-align: center;
+    padding: 40px;
+    background: #f6f6f6;
+  }
+  .container__button--order {
+    width: 200px;
+    -webkit-box-shadow: 0 5px 15px #b5b5b5;
+            box-shadow: 0 5px 15px #b5b5b5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    -webkit-animation: pulse 1.7s ease-in-out infinite;
+            animation: pulse 1.7s ease-in-out infinite;
+  }
+  .container__button--order:hover {
+    -webkit-box-shadow: 0 5px 15px #9b9b9b;
+            box-shadow: 0 5px 15px #9b9b9b;
+    background: #ff83dd;
+  }
   .menus {
     display: -webkit-box;
     display: -ms-flexbox;

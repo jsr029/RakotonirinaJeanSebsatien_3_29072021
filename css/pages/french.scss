@@ -186,20 +186,46 @@ a{
     to{transform: rotate(0);}
 }
 @media screen and (min-width:1024px){
-    .menus{
-        display: flex;
-        flex-direction: row;
-        column-gap: 20px;
-        justify-content: space-around;
-        align-items: center;
-        .entrees{
+.container{
+    width: 100%;
+    &__button{
+        text-align: center;
+        padding: 40px;
+        background: #f6f6f6;
+        &--order{
+            width: 200px;
+            box-shadow: 0 5px 15px darken(#cecece, 10%);
+            background: linear-gradient($secondary, $primary) ;
+            padding: 20px;
+            border-radius: 30px; 
+            color: white; 
+            font-weight: bold;
+            font-size: 1.1em;
+            border:  none;
+          // @extend %shadowButton;
+            cursor: pointer;
+            animation: pulse 1.7s ease-in-out infinite;
+            &:hover{
+                box-shadow: 0 5px 15px darken(#cecece, 20%);
+                background: lighten($secondary, 2%); 
+            }
+        }
+    }
+}    
+.menus{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    .entrees{
+        width: 380px;
+        &__bloc{
             width: 380px;
-                &__bloc{
-                    width: 380px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                    &--titre{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+                &--titre{
                     max-width: 100%;
                     white-space: nowrap;
                     overflow: hidden;
@@ -207,5 +233,6 @@ a{
                 }
             }
         }
+    
     }
 }
