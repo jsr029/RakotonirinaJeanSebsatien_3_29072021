@@ -22,6 +22,28 @@ a {
   width: 100%;
 }
 
+.entete {
+  position: relative;
+}
+
+.entete__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.entete__logo a {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+  font-size: 1.5em;
+}
+
 .french {
   max-width: 100%;
   background: #f6f6f6;
@@ -233,18 +255,6 @@ a {
 .menus .entrees__bloc:hover .icone {
   -webkit-animation: icone 1s linear 0.3s forwards;
           animation: icone 1s linear 0.3s forwards;
-}
-
-.menus .entrees__bloc--icone:before {
-  content: "";
-  display: none;
-  right: -100px;
-}
-
-.menus .entrees__bloc--icone:after {
-  content: "";
-  display: inline-block;
-  right: 0;
 }
 
 @-webkit-keyframes icone {
