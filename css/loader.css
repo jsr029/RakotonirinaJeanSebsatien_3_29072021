@@ -11,8 +11,8 @@
   right: 0;
   bottom: 0;
   z-index: 2000;
-  -webkit-animation: display 5s linear 0.3s forwards;
-          animation: display 5s linear 0.3s forwards;
+  -webkit-animation: display 3s linear 0.3s forwards;
+          animation: display 3s linear 0.3s forwards;
 }
 
 .page__bloc {

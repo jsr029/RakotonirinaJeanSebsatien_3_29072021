@@ -171,6 +171,12 @@ a {
   margin: auto;
 }
 
+.menus .entrees {
+  opacity: 0;
+  -webkit-animation: fadein 3s linear 4s forwards;
+          animation: fadein 3s linear 4s forwards;
+}
+
 .menus .entrees h2 {
   width: 10%;
   border-bottom: 2px solid #99E2D0;
@@ -268,6 +274,24 @@ a {
 .menus .entrees__bloc:hover .icone {
   -webkit-animation: icone 1s linear 0.3s forwards;
           animation: icone 1s linear 0.3s forwards;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes icone {

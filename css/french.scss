@@ -112,6 +112,8 @@ a{
     width: 95%;
     margin: auto;
     .entrees{
+        opacity: 0;
+            animation: fadein 3s linear 4s forwards;
         h2{
             width: 10%;
             border-bottom: 2px solid $ternary;
@@ -128,7 +130,7 @@ a{
             border-radius: 20px;
             box-shadow: 0 5px 15px darken(#f6f6f6, 10%);
             overflow: hidden;
-            &--titre{
+           &--titre{
                 width: 100%;
                 padding: 30px;
                 white-space: nowrap;
@@ -182,6 +184,15 @@ a{
         }
     }
 }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
 @keyframes icone {
     from{transform: rotate(180deg);}
     to{transform: rotate(0);}
