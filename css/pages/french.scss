@@ -111,6 +111,10 @@ a{
     width: 95%;
     margin: auto;
     .entrees{
+        h2{
+            width: 10%;
+            border-bottom: 2px solid $ternary;
+        }
         &__bloc{
             position: relative;
             display: flex;
@@ -126,7 +130,10 @@ a{
             &--titre{
                 width: 100%;
                 padding: 30px;
-                h3{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            h3, p{
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -142,6 +149,10 @@ a{
                 justify-content:space-between;
                 align-items: center;
                 column-gap: 20px;
+                span{
+                    font-weight: bold;
+
+                }
             }
             &--icone{
                 position: absolute;

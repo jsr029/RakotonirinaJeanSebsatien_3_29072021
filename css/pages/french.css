@@ -170,6 +170,11 @@ a {
   margin: auto;
 }
 
+.menus .entrees h2 {
+  width: 10%;
+  border-bottom: 2px solid #99E2D0;
+}
+
 .menus .entrees__bloc {
   position: relative;
   display: -webkit-box;
@@ -197,9 +202,12 @@ a {
 .menus .entrees__bloc--titre {
   width: 100%;
   padding: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.menus .entrees__bloc--titre h3 {
+.menus .entrees__bloc--titre h3, .menus .entrees__bloc--titre p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -226,6 +234,10 @@ a {
           align-items: center;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+}
+
+.menus .entrees__bloc--prix span {
+  font-weight: bold;
 }
 
 .menus .entrees__bloc--icone {
