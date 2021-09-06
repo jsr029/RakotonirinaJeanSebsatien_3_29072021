@@ -113,7 +113,7 @@ a{
     margin: auto;
     .entrees{
         opacity: 0;
-            animation: fadein 3s linear 4s forwards;
+            animation: fadein 3s linear 1s forwards;
         h2{
             width: 10%;
             border-bottom: 2px solid $ternary;
@@ -136,6 +136,7 @@ a{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                cursor: pointer;
             h3, p{
                     white-space: nowrap;
                     overflow: hidden;
@@ -202,7 +203,7 @@ a{
     width: 100%;
     &__button{
         text-align: center;
-        padding: 40px;
+        padding: 20px 40px 40px 40px;
         background: #f6f6f6;
         &--order{
             width: 200px;
@@ -257,5 +258,8 @@ a{
 @media screen and (max-width:768px){
     .menus .entrees__bloc{
         width: 100%;
+    }
+    .entrees__bloc.doublon{
+        display: none;
     }
 }

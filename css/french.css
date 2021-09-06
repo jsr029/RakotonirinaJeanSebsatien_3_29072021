@@ -173,8 +173,8 @@ a {
 
 .menus .entrees {
   opacity: 0;
-  -webkit-animation: fadein 3s linear 4s forwards;
-          animation: fadein 3s linear 4s forwards;
+  -webkit-animation: fadein 3s linear 1s forwards;
+          animation: fadein 3s linear 1s forwards;
 }
 
 .menus .entrees h2 {
@@ -212,6 +212,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .menus .entrees__bloc--titre h3, .menus .entrees__bloc--titre p {
@@ -322,7 +323,7 @@ a {
 
 .container__button {
   text-align: center;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
   background: #f6f6f6;
 }
 
@@ -392,6 +393,9 @@ a {
 @media screen and (max-width: 768px) {
   .menus .entrees__bloc {
     width: 100%;
+  }
+  .entrees__bloc.doublon {
+    display: none;
   }
 }
 /*# sourceMappingURL=french.css.map */
