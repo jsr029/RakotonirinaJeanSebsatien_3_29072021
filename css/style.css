@@ -567,10 +567,11 @@ body {
   color: black;
 }
 .usage__bloc--puces {
+  width: 40px;
   position: absolute;
   text-align: center;
   left: -25px;
-  padding: 20px;
+  padding: 10px;
   background-color: #9356DC;
   color: white;
   border-radius: 50%;

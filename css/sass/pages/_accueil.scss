@@ -84,10 +84,11 @@ body{
             color: black;
         }
         &--puces{
+            width: 40px;
             position: absolute;
             text-align: center;
             left: -25px;
-            padding: 20px;
+            padding: 10px;
             background-color: $primary;
             color: white;
             border-radius: 50%;
