@@ -277,8 +277,8 @@ body {
 }
 
 .restos__bloc--nom:hover > .restos__bloc--cache {
-  -webkit-animation: monte 2s linear 0s;
-          animation: monte 2s linear 0s;
+  -webkit-animation: monte 800ms linear 0s;
+          animation: monte 800ms linear 0s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

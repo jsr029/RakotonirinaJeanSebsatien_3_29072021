@@ -167,7 +167,7 @@ body{
             z-index: 400;
         }
         &--nom:hover > &--cache{
-            animation: monte 2s linear 0s;
+            animation: monte 800ms linear 0s;
             animation-fill-mode: forwards;        
         }
         /* gradient sur icone coeur */

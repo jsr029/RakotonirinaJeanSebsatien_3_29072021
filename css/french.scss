@@ -93,7 +93,7 @@ a{
                     background: #f6f6f6;
                 }
                 &:hover > .heart-cache{
-                    animation: monte 2s linear 0s;
+                    animation: monte 800ms linear 0s;
                     animation-fill-mode: forwards;        
                 }
             }
@@ -171,7 +171,7 @@ a{
                 color: white;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
-                transition: opacity 3s, visibility 4s, right 2s;
+                transition: opacity 2s, visibility 2s, right 800ms;
             }
             &--titre:hover + .entrees__bloc--icone{
                 position: relative;
@@ -180,7 +180,7 @@ a{
                 opacity: 1;
             }            
             &:hover .icone{
-                animation: icone 1s linear 0.3s forwards;
+                animation: icone 800ms linear 0.3s forwards;
             }
         }
     }

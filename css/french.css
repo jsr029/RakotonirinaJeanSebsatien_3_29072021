@@ -129,8 +129,8 @@ a {
 }
 
 .french__bg--top .heart:hover > .heart-cache {
-  -webkit-animation: monte 2s linear 0s;
-          animation: monte 2s linear 0s;
+  -webkit-animation: monte 800ms linear 0s;
+          animation: monte 800ms linear 0s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -261,8 +261,8 @@ a {
   color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  -webkit-transition: opacity 3s, visibility 4s, right 2s;
-  transition: opacity 3s, visibility 4s, right 2s;
+  -webkit-transition: opacity 2s, visibility 2s, right 800ms;
+  transition: opacity 2s, visibility 2s, right 800ms;
 }
 
 .menus .entrees__bloc--titre:hover + .entrees__bloc--icone {
@@ -273,8 +273,8 @@ a {
 }
 
 .menus .entrees__bloc:hover .icone {
-  -webkit-animation: icone 1s linear 0.3s forwards;
-          animation: icone 1s linear 0.3s forwards;
+  -webkit-animation: icone 800ms linear 0.3s forwards;
+          animation: icone 800ms linear 0.3s forwards;
 }
 
 @-webkit-keyframes fadein {
