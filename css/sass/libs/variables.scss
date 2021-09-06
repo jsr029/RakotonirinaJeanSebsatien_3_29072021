@@ -3,7 +3,7 @@ $secondary : #FF79DA;
 $ternary : #99E2D0;
 $colorButton : linear-gradient($secondary, $primary);
 %shadowButton{
-    box-shadow: 0 5px 10px #d1d1d1;
+    box-shadow: 5px 10px 15px #d1d1d1;
 }
 
 %shadowDarker{

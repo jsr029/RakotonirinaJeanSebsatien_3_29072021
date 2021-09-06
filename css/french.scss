@@ -215,16 +215,18 @@ a{
             font-weight: bold;
             font-size: 1.1em;
             border:  none;
-          // @extend %shadowButton;
             cursor: pointer;
             animation: pulse 1.7s ease-in-out infinite;
             &:hover{
-                box-shadow: 0 5px 15px darken(#cecece, 20%);
-                background: lighten($secondary, 2%); 
-            }
+                background: lighten($secondary, 0.5%); 
+                animation: pulseDarker 800ms ease-in;
+                }
         } 
     }
 }    
+        @include pulsar;
+        @include pulsarDarker;
+
 @media screen and (min-width:1024px){
 .menus{
     display: flex;

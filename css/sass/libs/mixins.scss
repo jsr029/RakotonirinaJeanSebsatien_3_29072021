@@ -17,6 +17,23 @@
         }
     }
 }
+@mixin pulsarDarker {
+    @keyframes pulseDarker{
+        0%{
+            box-shadow: 0 0 0 0 rgba(65, 40, 18, 0.91) , 0 0 0 0 rgba(97, 60, 27, 0.91);
+        }
+        40%{
+            box-shadow: 0 0 0 50px rgba(155, 96, 45, 0) , 0 0 0 0 rgba(114, 71, 33, 0.91);
+        }
+        80%{
+            box-shadow: 0 0 0 50px rgba(148, 92, 43, 0) , 0 0 0 30px rgba(143, 88, 40, 0);
+        }
+        100%{
+            box-shadow: 0 0 0 0 rgba(143, 89, 41, 0) , 0 0 0 30px rgba(134, 84, 40, 0);
+        }
+    }
+}
+
 @mixin igradient {
     background:-moz-linear-gradient(top, $secondary 0%, $primary 100%); 
     background: -webkit-linear-gradient(top, $secondary 0%,$primary 100%); 
@@ -32,4 +49,7 @@
         from{transform: translate(0,0);}
         to{transform: translate(0,-21px);}
     }
+}
+@mixin  boxShadowButton ($pxone:0px, $pxtwo:5px, $pxthree:15px, $couleur:grey){
+    box-shadow: $pxone $pxtwo $pxthree $couleur;
 }

@@ -5,9 +5,9 @@
 @import url("https://fonts.cdnfonts.com/css/shrikhand");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.search__button, .restos__bloc {
-  -webkit-box-shadow: 0 5px 10px #d1d1d1;
-          box-shadow: 0 5px 10px #d1d1d1;
+.restos__bloc {
+  -webkit-box-shadow: 5px 10px 15px #d1d1d1;
+          box-shadow: 5px 10px 15px #d1d1d1;
 }
 
 .restos a:hover {
@@ -57,6 +57,8 @@ body {
 .search__button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0 5px 15px #b5b5b5;
+          box-shadow: 0 5px 15px #b5b5b5;
   padding: 20px;
   border-radius: 30px;
   color: white;
@@ -68,7 +70,9 @@ body {
 }
 
 .search__button:hover {
-  background: #ff83dd;
+  background: #ff7cdb;
+  -webkit-animation: pulseDarker 800ms ease-in;
+          animation: pulseDarker 800ms ease-in;
 }
 
 @-webkit-keyframes pulse {
@@ -106,6 +110,44 @@ body {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 158, 74, 0), 0 0 0 30px rgba(255, 158, 74, 0);
             box-shadow: 0 0 0 0 rgba(255, 158, 74, 0), 0 0 0 30px rgba(255, 158, 74, 0);
+  }
+}
+
+@-webkit-keyframes pulseDarker {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(65, 40, 18, 0.91), 0 0 0 0 rgba(97, 60, 27, 0.91);
+            box-shadow: 0 0 0 0 rgba(65, 40, 18, 0.91), 0 0 0 0 rgba(97, 60, 27, 0.91);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 50px rgba(155, 96, 45, 0), 0 0 0 0 rgba(114, 71, 33, 0.91);
+            box-shadow: 0 0 0 50px rgba(155, 96, 45, 0), 0 0 0 0 rgba(114, 71, 33, 0.91);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 50px rgba(148, 92, 43, 0), 0 0 0 30px rgba(143, 88, 40, 0);
+            box-shadow: 0 0 0 50px rgba(148, 92, 43, 0), 0 0 0 30px rgba(143, 88, 40, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(143, 89, 41, 0), 0 0 0 30px rgba(134, 84, 40, 0);
+            box-shadow: 0 0 0 0 rgba(143, 89, 41, 0), 0 0 0 30px rgba(134, 84, 40, 0);
+  }
+}
+
+@keyframes pulseDarker {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(65, 40, 18, 0.91), 0 0 0 0 rgba(97, 60, 27, 0.91);
+            box-shadow: 0 0 0 0 rgba(65, 40, 18, 0.91), 0 0 0 0 rgba(97, 60, 27, 0.91);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 50px rgba(155, 96, 45, 0), 0 0 0 0 rgba(114, 71, 33, 0.91);
+            box-shadow: 0 0 0 50px rgba(155, 96, 45, 0), 0 0 0 0 rgba(114, 71, 33, 0.91);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 50px rgba(148, 92, 43, 0), 0 0 0 30px rgba(143, 88, 40, 0);
+            box-shadow: 0 0 0 50px rgba(148, 92, 43, 0), 0 0 0 30px rgba(143, 88, 40, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(143, 89, 41, 0), 0 0 0 30px rgba(134, 84, 40, 0);
+            box-shadow: 0 0 0 0 rgba(143, 89, 41, 0), 0 0 0 30px rgba(134, 84, 40, 0);
   }
 }
 
