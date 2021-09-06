@@ -193,24 +193,24 @@ body{
         position: relative;
         max-width: 1440px;
         margin: auto;
-        display: grid;
+      /*  display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "entete entete"
         "search search"
         "usage usage"
-        "restos restos";
+        "restos restos";*/
     }
-    .entete{
+    /*.entete{
         grid-area: entete;
     }
     .search{
         grid-area: search;
-    }
+    }*/
     .usage{
         max-width: 100%;
         margin-top: 20px;
-        grid-area: usage;
+        //grid-area: usage;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 30px 100px;
