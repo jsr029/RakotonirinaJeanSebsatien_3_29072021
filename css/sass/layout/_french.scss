@@ -156,10 +156,10 @@ a{
             }
             &--icone{
                 position: absolute;
-                right: -100px;
+                right: -89px;
                 opacity: 0;
                 visibility: hidden;
-                width: 102px;
+                width: 90px;
                 height: 102px;
                 padding: 32px;
                 font-size: 1.4em;
@@ -167,7 +167,7 @@ a{
                 color: white;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
-                transition: opacity 2s, visibility 2s, right 800ms;
+                transition: opacity 1s, visibility 1s, right 300ms ease-in;
             }
             &--titre:hover + .entrees__bloc--icone{
                 position: relative;
@@ -176,7 +176,7 @@ a{
                 opacity: 1;
             }            
             &:hover .icone{
-                animation: icone 800ms linear 0.3s forwards;
+                animation: icone 600ms linear 0.1s forwards;
             }
         }
     }
