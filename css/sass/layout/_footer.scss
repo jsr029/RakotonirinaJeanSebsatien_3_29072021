@@ -1,8 +1,9 @@
 .pieds{
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    max-width: 100%;
     background-color: #353535;
     color: white;
     padding: 20px;
@@ -22,5 +23,5 @@
         i{
             margin-right: 10px;
         }
-    }
+    } 
 }
