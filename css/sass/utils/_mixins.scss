@@ -61,7 +61,7 @@
         &--order{
             width: 200px;
             box-shadow: 0 5px 15px darken(#cecece, 10%);
-            background: linear-gradient($secondary, $primary) ;
+            background: linear-gradient($secondary, $primary);
             padding: 20px;
             border-radius: 30px; 
             color: white; 
@@ -71,10 +71,17 @@
             cursor: pointer;
             animation: pulse 1.7s ease-in-out infinite;
             &:hover{
-                background: lighten($secondary, 0.5%); 
+                @include bgButton($bgButton); 
                 animation: pulseDarker 800ms ease-in;
                 }
         } 
     }
 
 }
+@mixin bgButton($couleur){
+    @if(lightness($couleur) < 180) {
+        background: linear-gradient(lighten($couleur, 10%), $primary);
+      }else{
+        background: darken($couleur, 2%), linear-gradient($secondary, $primary);
+      }
+    }
