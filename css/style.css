@@ -2,6 +2,27 @@
 @import url("https://fonts.cdnfonts.com/css/shrikhand");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 100%;
+}
+
 .restos__bloc {
   box-shadow: 5px 10px 15px #d1d1d1;
 }
@@ -44,27 +65,6 @@
 }
 .entete__lieu--icone {
   margin: 0 5px 0 0;
-}
-
-body {
-  width: 100%;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.container {
-  width: 100%;
 }
 
 .entete {
@@ -263,9 +263,6 @@ a {
     transform: rotate(0);
   }
 }
-.container {
-  width: 100%;
-}
 .container__button {
   text-align: center;
   padding: 20px 40px 40px 40px;
@@ -459,16 +456,6 @@ a {
              primaire #9356DC secondaire #FF79DA tertiaire #99E2D0
                            Texte Roboto
 **********************************************************************************/
-body {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .search {
   display: flex;
   flex-direction: column;

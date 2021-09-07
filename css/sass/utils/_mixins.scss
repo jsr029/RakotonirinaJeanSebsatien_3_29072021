@@ -53,3 +53,28 @@
 @mixin  boxShadowButton ($pxone:0px, $pxtwo:5px, $pxthree:15px, $couleur:grey){
     box-shadow: $pxone $pxtwo $pxthree $couleur;
 }
+@mixin mainButton{
+    &__button{
+        text-align: center;
+        padding: 20px 40px 40px 40px;
+        background: #f6f6f6;
+        &--order{
+            width: 200px;
+            box-shadow: 0 5px 15px darken(#cecece, 10%);
+            background: linear-gradient($secondary, $primary) ;
+            padding: 20px;
+            border-radius: 30px; 
+            color: white; 
+            font-weight: bold;
+            font-size: 1.1em;
+            border:  none;
+            cursor: pointer;
+            animation: pulse 1.7s ease-in-out infinite;
+            &:hover{
+                background: lighten($secondary, 0.5%); 
+                animation: pulseDarker 800ms ease-in;
+                }
+        } 
+    }
+
+}

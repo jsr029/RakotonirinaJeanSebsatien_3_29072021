@@ -8,6 +8,7 @@ Dans le cadre d'une formation Développeur Front-End chez OpenClassRooms, ce pro
 - Assurer la cohérence graphique d'un site web
 
 -Petit Bémol, la structure 7-1
+
 1.Base.
 
 2.Utils.
