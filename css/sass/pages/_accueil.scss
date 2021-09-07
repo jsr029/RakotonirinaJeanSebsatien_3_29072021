@@ -127,7 +127,7 @@
         background-color: white;
         border-radius: 15px;
         @extend %shadowButton;
-        margin: 0 10px 20px 0;
+        margin: 0 10px 20px 10px;
         &--image{
             width: 100%;
             height: 200px;
@@ -242,5 +242,14 @@
     }
     .sens{
         grid-area: sens;
+    }
+}
+@media screen and (max-width:320px){
+    .usage__bloc{
+        width: 275px;
+        padding-left: 0;
+    }
+    .usage__bloc--icone {
+        margin: 0 0 0 18px;
     }
 }

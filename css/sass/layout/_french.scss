@@ -1,5 +1,5 @@
 .entete{
-    position: relative;
+   // position: relative;
     &__logo{
         width: 100%;
         display: flex;
@@ -13,7 +13,6 @@
     }
 } 
 .french{
-    max-width: 100%;
     background: #f6f6f6;
     padding-bottom: 10px;
     &__bg{

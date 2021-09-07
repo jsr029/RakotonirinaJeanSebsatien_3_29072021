@@ -32,6 +32,7 @@ a {
 }
 
 .entete {
+  position: relative;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,9 +68,6 @@ a {
   margin: 0 5px 0 0;
 }
 
-.entete {
-  position: relative;
-}
 .entete__logo {
   width: 100%;
   display: flex;
@@ -83,7 +81,6 @@ a {
 }
 
 .french {
-  max-width: 100%;
   background: #f6f6f6;
   padding-bottom: 10px;
 }
@@ -601,7 +598,7 @@ a {
   position: relative;
   background-color: white;
   border-radius: 15px;
-  margin: 0 10px 20px 0;
+  margin: 0 10px 20px 10px;
   /* gradient sur icone coeur */
 }
 .restos__bloc--image {
@@ -733,6 +730,16 @@ a {
 
   .sens {
     grid-area: sens;
+  }
+}
+@media screen and (max-width: 320px) {
+  .usage__bloc {
+    width: 275px;
+    padding-left: 0;
+  }
+
+  .usage__bloc--icone {
+    margin: 0 0 0 18px;
   }
 }
 .doublon {
