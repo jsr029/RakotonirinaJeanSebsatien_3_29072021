@@ -58,7 +58,7 @@
 @mixin  boxShadowButton ($pxone:0px, $pxtwo:5px, $pxthree:15px, $couleur:grey){
     box-shadow: $pxone $pxtwo $pxthree $couleur;
 }
-/* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover */
+/* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover, puis arret */
 @mixin mainButton{
     &__button{
         text-align: center;
@@ -77,7 +77,7 @@
             cursor: pointer;
             animation: pulse 1.7s ease-in-out infinite;
             &:hover{
-                @include bgButton($bgButton); 
+                @include bgButton($secondary); 
                 animation: pulseDarker 800ms ease-in;
                 }
         } 

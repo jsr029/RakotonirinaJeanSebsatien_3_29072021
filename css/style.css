@@ -40,7 +40,7 @@ a {
 /* colorie graduellement le sélecteur ici, ce sera l'icone coeur plein de la page index avec accueil.css*/
 /* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */
 /* effet ombré sur le bouton  non utilisé*/
-/* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover */
+/* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover, puis arret */
 /* effet éclaircissement du bouton principal au hover */
 .entete {
   position: relative;

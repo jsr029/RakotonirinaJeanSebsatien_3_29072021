@@ -27,7 +27,7 @@
         cursor: pointer;
         animation: pulse 1.7s ease-in-out infinite;
         &:hover{
-            @include bgButton($bgButton); 
+            @include bgButton($secondary); 
             animation: pulseDarker 800ms ease-in;
         }
     }
