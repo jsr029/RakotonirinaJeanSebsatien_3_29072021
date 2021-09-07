@@ -416,7 +416,6 @@ a {
   height: 180px;
   margin: 0;
   padding: 0;
-  animation: spin 450ms linear infinite;
 }
 .page__bloc--loader img {
   width: 180px;
