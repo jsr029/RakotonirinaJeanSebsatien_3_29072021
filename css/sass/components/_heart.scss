@@ -1,0 +1,42 @@
+.heart{
+    margin-right: 18px;
+    font-size: 1.4em;
+    .heart-vide{
+        position: absolute;
+        bottom: 25px;
+        right: 35px;
+        width: 23px;
+        height: 23px;
+        font-size: 1.2em;
+    }
+    .heart-vide{
+        z-index: 400;
+    }
+
+    .heart-plein{
+        position: absolute;
+        bottom: 25px;
+        right: 33px;
+        width: 25px;
+        height: 23px;
+        font-size: 1.2em;
+        z-index: 200;
+        @include igradient;
+    }
+    .heart-cache{
+        position: absolute;
+        bottom: 25px;
+        right: 30px;
+        width: 30px;
+        height: 23px;
+        font-size: 1.2em;
+        z-index: 300;
+        background: #f6f6f6;
+    }
+    &:hover > .heart-cache{
+        animation: monte 800ms linear 0s;
+        animation-fill-mode: forwards;        
+    }
+}
+/* Progression heart */
+@include progressHeart;
