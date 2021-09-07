@@ -178,7 +178,12 @@
 /*********** loader test ***********/
 
 /*********fin loader ******************/
-
+@media screen and (min-width:1440px){
+    .usage{
+        justify-content: right;
+    }
+    
+}
 @media screen and (min-width:1024px) {
     .container{
         position: relative;
@@ -194,7 +199,6 @@
         grid-template-areas: 
         "titre titre titre"
         "shop menu degust";
-        justify-content: right;
         align-items: center;
     }
     .titre{

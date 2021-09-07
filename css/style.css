@@ -660,6 +660,11 @@ a {
 }
 /*********** loader test ***********/
 /*********fin loader ******************/
+@media screen and (min-width: 1440px) {
+  .usage {
+    justify-content: right;
+  }
+}
 @media screen and (min-width: 1024px) {
   .container {
     position: relative;
@@ -674,7 +679,6 @@ a {
     grid-template-columns: repeat(3, 31%);
     grid-template-rows: 30px 150px;
     grid-template-areas: "titre titre titre" "shop menu degust";
-    justify-content: right;
     align-items: center;
   }
 
