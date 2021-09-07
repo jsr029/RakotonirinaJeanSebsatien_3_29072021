@@ -34,6 +34,14 @@ a {
   box-shadow: 0 5px 10px black;
 }
 
+/* effet sur restos__bloc, chgt d'échelle au hover dans page index */
+/* effet pulsar sur bouton principal */
+/* effet pulsar sur bouton principal au hover avec arret du pulsar */
+/* colorie graduellement le sélecteur ici, ce sera l'icone coeur plein de la page index avec accueil.css*/
+/* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */
+/* effet ombré sur le bouton  non utilisé*/
+/* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover */
+/* effet éclaircissement du bouton principal au hover */
 .entete {
   position: relative;
   max-width: 100%;
