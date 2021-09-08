@@ -39,8 +39,10 @@
 }
 /* colorie graduellement le sélecteur ici, ce sera l'icone coeur plein de la page index avec accueil.css*/
 @mixin igradient {
-    background:-moz-linear-gradient(top, $secondary 0%, $primary 100%); 
-    background: -webkit-linear-gradient(top, $secondary 0%,$primary 100%); 
+    //background:-moz-linear-gradient(top, $secondary 0%, $primary 100%); 
+    -moz-background:linear-gradient(top, $secondary 0%, $primary 100%); 
+    //background: -webkit-linear-gradient(top, $secondary 0%,$primary 100%); 
+    -webkit-background: linear-gradient(top, $secondary 0%,$primary 100%); 
     background: linear-gradient(to top, $secondary 0%, $primary 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;

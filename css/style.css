@@ -66,7 +66,6 @@ a {
 }
 .entete__lieu {
   width: 100%;
-  width: -webkit-fill-available;
   background-color: #eaeaea;
   padding: 10px;
   border-top: 2px solid #d5d5d5;
@@ -102,8 +101,8 @@ a {
   height: 23px;
   font-size: 1.2em;
   z-index: 200;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  -moz-background: linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  -webkit-background: linear-gradient(top, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -653,8 +652,8 @@ a {
 }
 .restos__bloc--plein {
   z-index: 200;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  -moz-background: linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  -webkit-background: linear-gradient(top, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
