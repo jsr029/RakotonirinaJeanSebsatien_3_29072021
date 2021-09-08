@@ -136,15 +136,12 @@ a {
   width: 90px;
   height: 102px;
   padding: 32px;
-  font-size: 1.4em;
+  font-size: 2em;
   background-color: #99E2D0;
   color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: opacity 1s, visibility 1s, right 300ms ease-in;
-}
-.menus .entrees__bloc--icone.icone {
-  font-size: 1.5em;
 }
 .menus .entrees__bloc--titre:hover + .entrees__bloc--icone {
   position: relative;
