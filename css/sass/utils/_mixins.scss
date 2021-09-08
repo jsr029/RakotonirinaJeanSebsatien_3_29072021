@@ -78,7 +78,9 @@
             cursor: pointer;
             animation: pulse 1.7s ease-in-out infinite;
             &:hover{
-                @include bgButton($secondary); 
+                /* pose probleme à w3c css validator */
+                //@include bgButton($secondary); 
+                background: lighten($secondary, 1%);
                 animation: pulseDarker 800ms ease-in;
                 }
         } 

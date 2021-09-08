@@ -286,11 +286,9 @@ a {
   animation: pulse 1.7s ease-in-out infinite;
 }
 .container__button--order:hover {
-  background: linear-gradient(#fface8, #9356DC);
+  /* pose probleme à w3c css validator */
+  background: #ff7edb;
   animation: pulseDarker 800ms ease-in;
-}
-.container__button--order:hover else {
-  background: #ff6fd7, linear-gradient(#FF79DA, #9356DC);
 }
 
 @keyframes pulse {
@@ -489,11 +487,9 @@ a {
   animation: pulse 1.7s ease-in-out infinite;
 }
 .search__button:hover {
-  background: linear-gradient(#fface8, #9356DC);
+  /* pose problmeme w3c css validator */
+  background: #ff7edb;
   animation: pulseDarker 800ms ease-in;
-}
-.search__button:hover else {
-  background: #ff6fd7, linear-gradient(#FF79DA, #9356DC);
 }
 
 @keyframes pulse {
