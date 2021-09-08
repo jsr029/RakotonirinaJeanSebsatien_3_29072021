@@ -101,14 +101,8 @@ a {
   height: 23px;
   font-size: 1.2em;
   z-index: 200;
-  -moz-background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  /* erreur dans css validator text n'est pas une valeur*/
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FF79DA;
+  /* linear gradient sur coeur plein mais erreur css validator */
 }
 .heart .heart-cache {
   position: absolute;
@@ -652,14 +646,7 @@ a {
 }
 .restos__bloc--plein {
   z-index: 200;
-  -moz-background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  /* erreur dans css validator text n'est pas une valeur*/
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FF79DA;
 }
 .restos__bloc--cache {
   z-index: 300;
