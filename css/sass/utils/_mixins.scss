@@ -95,3 +95,14 @@
         background: darken($couleur, 2%), linear-gradient($secondary, $primary);
       }
     }
+@mixin nouveau {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 10px 20px;
+            background: $ternary;
+            color: darken($ternary, 50%);
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 5px;
+}

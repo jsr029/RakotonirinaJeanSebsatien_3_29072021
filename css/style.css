@@ -153,6 +153,22 @@ a {
   animation: icone 600ms linear 0.1s forwards;
 }
 
+.restos__bloc .new.active {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 10px 20px;
+  background: #99E2D0;
+  color: #1b6150;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.restos__bloc .new.notactive {
+  display: none;
+}
+
 .entete__logo {
   width: 100%;
   display: flex;
