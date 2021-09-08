@@ -102,13 +102,8 @@ a {
   height: 23px;
   font-size: 1.2em;
   z-index: 200;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .heart .heart-cache {
   position: absolute;
@@ -652,13 +647,8 @@ a {
 }
 .restos__bloc--plein {
   z-index: 200;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .restos__bloc--cache {
   z-index: 300;
