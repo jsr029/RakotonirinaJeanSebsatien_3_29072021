@@ -103,7 +103,7 @@ a {
   font-size: 1.2em;
   z-index: 200;
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  background-clip: text;
+  /* erreur dans css validator text n'est pas une valeur*/
 }
 .heart .heart-cache {
   position: absolute;
@@ -648,7 +648,7 @@ a {
 .restos__bloc--plein {
   z-index: 200;
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  background-clip: text;
+  /* erreur dans css validator text n'est pas une valeur*/
 }
 .restos__bloc--cache {
   z-index: 300;
