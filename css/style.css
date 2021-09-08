@@ -528,13 +528,14 @@ a {
   row-gap: 20px;
 }
 .usage__titre {
-  margin: 15px 0 0 10px;
+  width: 100%;
+  margin: 15px 0 0 30px;
 }
 .usage__bloc {
   text-decoration: none;
   color: black;
   position: relative;
-  max-width: 300px;
+  width: 300px;
   background-color: #f6f6f6;
   padding-left: 30px;
   margin: 0 10px 30px 20px;
@@ -595,7 +596,8 @@ a {
   transform: scale(1.05);
 }
 .restos__titre {
-  margin: 15px 0 30px 0;
+  width: 100%;
+  margin: 15px 0 30px 10px;
 }
 .restos__bloc {
   width: 310px;
