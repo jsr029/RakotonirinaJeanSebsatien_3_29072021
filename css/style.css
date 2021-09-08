@@ -638,7 +638,7 @@ a {
 .restos__bloc--icone {
   z-index: 400;
 }
-.restos__bloc--nom:hover > .restos__bloc--cache {
+.restos__bloc--icone:hover + .restos__bloc--cache {
   animation: monte 800ms linear 0s;
   animation-fill-mode: forwards;
 }
