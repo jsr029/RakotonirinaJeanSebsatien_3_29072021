@@ -42,10 +42,10 @@
     background:-moz-linear-gradient(top, $secondary 0%, $primary 100%); 
     background: -webkit-linear-gradient(top, $secondary 0%,$primary 100%); 
     background: linear-gradient(to top, $secondary 0%, $primary 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
     /* erreur dans css validator text n'est pas une valeur*/
-    background-clip: text;
+    background-clip: content-box;
     -webkit-text-fill-color:transparent;
 }
 /* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */

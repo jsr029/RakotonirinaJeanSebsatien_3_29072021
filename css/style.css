@@ -668,10 +668,10 @@ a {
   background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
   background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
   /* erreur dans css validator text n'est pas une valeur*/
-  background-clip: text;
+  background-clip: content-box;
   -webkit-text-fill-color: transparent;
 }
 .restos__bloc--cache {
