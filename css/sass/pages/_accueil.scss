@@ -102,6 +102,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+        transition: 3s linear;
     a{
         text-decoration: none;
         color: black;
@@ -110,7 +111,6 @@
     a:hover{
         @include scaler;
         @extend %shadowDarker;
-        transition: hover 4s linear 1s;
      }
     &__titre{
        width: 100%;

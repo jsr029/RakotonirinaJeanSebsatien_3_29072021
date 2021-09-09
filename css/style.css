@@ -607,6 +607,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  transition: 3s linear;
 }
 .restos a {
   text-decoration: none;
@@ -614,7 +615,6 @@ a {
 }
 .restos a:hover {
   transform: scale(1.05);
-  transition: hover 4s linear 1s;
 }
 .restos__titre {
   width: 100%;
@@ -671,7 +671,6 @@ a {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   /* erreur dans css validator text n'est pas une valeur*/
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .restos__bloc--cache {
