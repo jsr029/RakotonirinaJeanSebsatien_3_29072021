@@ -103,14 +103,15 @@
     align-items: center;
     padding: 20px;
     a{
-    text-decoration: none;
-    color: black;
+        text-decoration: none;
+        color: black;
+        transition: hover 4s linear 1s;
     }
 
     a:hover{
         @include scaler;
         @extend %shadowDarker;
-    }
+     }
     &__titre{
        width: 100%;
         margin: 15px 0 30px 10px;

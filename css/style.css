@@ -607,6 +607,7 @@ a {
 .restos a {
   text-decoration: none;
   color: black;
+  transition: hover 4s linear 1s;
 }
 .restos a:hover {
   transform: scale(1.05);
