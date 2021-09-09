@@ -161,8 +161,8 @@
         /* gradient sur icone coeur */
         &--plein{
             z-index: 200;
-            color: $secondary;
-            //@include igradient; 
+            ///color: $secondary;
+            @include igradient; 
         }
         &--cache{
             z-index: 300;
