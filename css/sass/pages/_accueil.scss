@@ -105,12 +105,12 @@
     a{
         text-decoration: none;
         color: black;
-        transition: hover 4s linear 1s;
     }
 
     a:hover{
         @include scaler;
         @extend %shadowDarker;
+        transition: hover 4s linear 1s;
      }
     &__titre{
        width: 100%;
