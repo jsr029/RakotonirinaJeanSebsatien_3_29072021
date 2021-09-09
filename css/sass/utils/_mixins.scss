@@ -79,7 +79,7 @@
             animation: pulse 1.7s ease-in-out infinite;
             &:hover{
                 /* pose probleme à w3c css validator */
-                @include bgButton($secondary); 
+                @include bgButton; 
                 //background: lighten($secondary, 1%);
                 animation: pulseDarker 800ms ease-in;
                 }
@@ -88,12 +88,8 @@
 
 }
 /* effet éclaircissement du bouton principal au hover */
-@mixin bgButton($couleur){
-    @if(lightness($couleur) < 25%) {
-        background: linear-gradient(lighten($couleur, 10%), $primary);
-      }else{
-        background: linear-gradient(darken($secondary, 10%), $primary);
-      }
+@mixin bgButton($first: $primary, $second:$secondary){
+        background: linear-gradient(lighten($second, 10%), lighten($first, 2%));
     }
 @mixin nouveau {
             position: absolute;

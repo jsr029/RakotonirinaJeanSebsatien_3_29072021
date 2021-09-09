@@ -28,7 +28,7 @@
         animation: pulse 1.7s ease-in-out infinite;
         &:hover{
             /* pose problmeme w3c css validator */
-            @include bgButton($secondary); 
+            @include bgButton; 
             //background: lighten($secondary, 1%);
             animation: pulseDarker 800ms ease-in;
         }
