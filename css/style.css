@@ -665,8 +665,8 @@ a {
 }
 .restos__bloc--plein {
   z-index: 200;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  background: -moz-linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
+  background: -webkit-linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
