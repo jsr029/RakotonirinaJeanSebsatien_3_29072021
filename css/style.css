@@ -139,9 +139,9 @@ a {
   right: -89px;
   opacity: 0;
   visibility: hidden;
-  width: 90px;
-  height: 102px;
-  padding: 32px;
+  width: 89px;
+  height: 82px;
+  padding: 20px;
   font-size: 2em;
   background-color: #99E2D0;
   color: white;
@@ -247,7 +247,7 @@ a {
 }
 .menus .entrees__bloc--titre {
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
