@@ -21,9 +21,9 @@
         height: 23px;
         font-size: 1.2em;
         z-index: 200;
-        color: $secondary;
+        //color: $secondary;
         /* linear gradient sur coeur plein mais erreur css validator */
-        //@include igradient;
+        @include igradient;
     }
     .heart-cache{
         position: absolute;
