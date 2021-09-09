@@ -89,10 +89,10 @@
 }
 /* effet éclaircissement du bouton principal au hover */
 @mixin bgButton($couleur){
-    @if(lightness($couleur) < 180) {
+    @if(lightness($couleur) < 25%) {
         background: linear-gradient(lighten($couleur, 10%), $primary);
       }else{
-        background: darken($couleur, 2%), linear-gradient($secondary, $primary);
+        background: linear-gradient(darken($secondary, 10%), $primary);
       }
     }
 @mixin nouveau {

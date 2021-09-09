@@ -303,11 +303,10 @@ a {
 }
 .container__button--order:hover {
   /* pose probleme à w3c css validator */
-  background: linear-gradient(#fface8, #9356DC);
   animation: pulseDarker 800ms ease-in;
 }
 .container__button--order:hover else {
-  background: #ff6fd7, linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff46cc, #9356DC);
 }
 
 @keyframes pulse {
@@ -507,11 +506,10 @@ a {
 }
 .search__button:hover {
   /* pose problmeme w3c css validator */
-  background: linear-gradient(#fface8, #9356DC);
   animation: pulseDarker 800ms ease-in;
 }
 .search__button:hover else {
-  background: #ff6fd7, linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff46cc, #9356DC);
 }
 
 @keyframes pulse {
