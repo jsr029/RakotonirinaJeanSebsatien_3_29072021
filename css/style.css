@@ -551,7 +551,7 @@ a {
 }
 .usage__titre {
   width: 100%;
-  margin: 15px 0 0 30px;
+  padding: 15px 0 0 10px;
 }
 .usage__bloc {
   text-decoration: none;
@@ -620,7 +620,7 @@ a {
 }
 .restos__titre {
   width: 100%;
-  margin: 15px 0 30px 10px;
+  padding: 15px 0 30px 0;
 }
 .restos__bloc {
   width: 310px;
@@ -768,6 +768,10 @@ a {
   }
 }
 @media screen and (max-width: 320px) {
+  .container, .pieds {
+    max-width: 320px;
+  }
+
   .usage__bloc {
     width: 275px;
     padding-left: 0;
