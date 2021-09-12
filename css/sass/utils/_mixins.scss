@@ -102,3 +102,6 @@
             font-weight: bold;
             border-radius: 5px;
 }
+@function rem($size, $base:16){
+    @return 1rem * $size / $base;
+}
