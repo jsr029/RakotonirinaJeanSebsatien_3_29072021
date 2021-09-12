@@ -490,17 +490,19 @@ a {
 }
 .search__h1 {
   font-weight: bold;
-  padding: 20px 50px 10px 50px;
+  padding: 1rem 3rem;
   margin: 0;
 }
 .search__p {
   margin: 0;
-  padding: 0 30px 20px 30px;
+  padding: 0 1rem 1rem 1rem;
 }
 .search__button {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 5px 15px #b5b5b5;
-  padding: 20px;
+  padding: 1.2rem;
+  margin: 1.2rem 0;
+  font-size: 16px;
   border-radius: 30px;
   color: white;
   font-weight: bold;
