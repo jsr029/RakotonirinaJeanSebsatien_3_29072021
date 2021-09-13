@@ -221,13 +221,12 @@
     }
     .restos{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 280px 280px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 280px;
         grid-row-gap: 40px;
         grid-template-areas: 
-        "title title"
-        "palette note"
-        "french sens";
+        "title title title title"
+        "palette note french sens";
         justify-content: space-around;
         align-items: center;
         &__bloc{
