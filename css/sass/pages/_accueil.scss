@@ -122,7 +122,7 @@
     }
     &__bloc{
         width: 310px;
-        height: 280px;
+        height: 230px;
         overflow: hidden;
         position: relative;
         background-color: white;
@@ -131,7 +131,7 @@
         margin: 0 10px 20px 10px;
         &--image{
             width: 100%;
-            height: 200px;
+            height: 150px;
             border-radius: 15px 15px 0 0;
             object-fit: cover;
             object-position: center 60%;
@@ -141,6 +141,7 @@
             border: none;
         }
         &--titre{
+            width: 95%;
             margin: 5px 0 5px 10px;
             font-size: 1.2em;
         }
