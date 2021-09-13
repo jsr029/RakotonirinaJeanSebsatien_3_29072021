@@ -1,5 +1,6 @@
 .page{
-    width: 100%;
+    //je te vire, tu me crées un scroll horizontal, t'arrêtes, tu sors !
+    //width: 100%;
     background-color: black;
     color: white;
     font-size: 1rem;
@@ -37,6 +38,7 @@
             border-top-color: $primary;
             border-bottom-color: $secondary;
             opacity: 0.6;
+            //le fait de placer l'animation dans le parent ralentit l'animation d'où 1s de plus pour l'enfant
             animation: spin2 1s linear infinite;
         }   
         .loader2::after{
