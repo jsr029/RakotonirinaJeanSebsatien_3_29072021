@@ -46,6 +46,18 @@ a {
 /* l'appel dans scss rem(parametres)*/
 /* savoir créer une map*/
 /* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
+.letter-primaire {
+  color: #9356DC;
+}
+
+.letter-secondaire {
+  color: #FF79DA;
+}
+
+.letter-tertiaire {
+  color: #99E2D0;
+}
+
 .entete {
   position: relative;
   max-width: 100%;
@@ -423,7 +435,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 2000;
-  animation: display 3s linear 0.3s forwards;
+  animation: display 10s linear 0.3s forwards;
 }
 .page__bloc {
   width: 350px;
@@ -435,26 +447,74 @@ a {
   transform: translate(-50%, -50%);
   /* décalage de 50% de sa propre taille */
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  font-size: 0.8rem;
+}
+.page__bloc .loader, .page__bloc .loader2 {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #99E2D0;
+  border-bottom-color: #99E2D0;
+}
+.page__bloc .loader::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  opacity: 0.6;
+  animation: spin2 2s linear infinite;
+  -web-animation: spin2 2s linear infinite;
+}
+.page__bloc .loader2::after {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  opacity: 0.6;
 }
 .page__bloc h2 {
   height: 30px;
 }
 .page__bloc--loader {
-  width: 180px;
-  height: 180px;
-  margin: 0;
-  padding: 0;
-}
-.page__bloc--loader img {
-  width: 180px;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  animation: spin2 2s linear infinite;
+  -web-animation: spin2 2s linear infinite;
 }
 
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 .page:before {
   content: "";
   display: block;
@@ -465,14 +525,10 @@ a {
   display: none;
 }
 
-@keyframes spin {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(0, 20px);
-  }
-}
+/*@keyframes spin {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(0, 20px); }
+}*/
 @keyframes display {
   from {
     display: block;

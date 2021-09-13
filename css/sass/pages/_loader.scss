@@ -7,34 +7,73 @@
     position: fixed;
     top:0;left: 0;right:0;bottom: 0;
     z-index: 2000;
-    animation: display 3s linear 0.3s forwards;
+    animation: display 10s linear 0.3s forwards;
     &__bloc{
         width: 350px;
         position: absolute; /* postulat de départ */
         top: 50%; left: 50%; /* à 50%/50% du parent référent */
         transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content:space-around;
         align-items: center;
+        font-size: .8rem;
+        .loader, .loader2{
+            border-radius: 50px;
+            border: 6px solid transparent;
+            border-top-color: $ternary;
+            border-bottom-color: $ternary;
+        }   
+        .loader::after{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right:5px;
+            border-radius: 50px;
+            border: 6px solid transparent;
+            border-top-color: $primary;
+            border-bottom-color: $secondary;
+            opacity: 0.6;
+            animation: spin2 2s linear infinite;
+            -web-animation: spin2 2s linear infinite;
+        }   
+        .loader2::after{
+            position: absolute;
+            content: '';
+            top: -6px;
+            left: -6px;
+            bottom: -6px;
+            right:-6px;
+            border-radius: 50px;
+            border: 6px solid transparent;
+            border-top-color: $primary;
+            border-bottom-color: $secondary;
+            opacity: 0.6;
+        }   
         h2{
             height: 30px;
         }
         &--loader{
-            width: 180px;
-            height: 180px;
-            margin: 0;
-            padding: 0;
-           // animation: spin 450ms linear infinite;
-            img{
-                width: 180px;
-                margin: 0;
-                padding: 0;
-            }
+            position: relative;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            animation: spin2 2s linear infinite;
+            -web-animation: spin2 2s linear infinite;
         }
 
     }
+}
+@keyframes spin2 {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+@-webkit-keyframes spin2 {
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
 }
 .page:before{
     content: "";
@@ -44,10 +83,10 @@
     content: "";
     display: none;
 }
-@keyframes spin {
+/*@keyframes spin {
   0% { transform: translate(0,0); }
   100% { transform: translate(0, 20px); }
-}
+}*/
 
 @keyframes display {
     from{
