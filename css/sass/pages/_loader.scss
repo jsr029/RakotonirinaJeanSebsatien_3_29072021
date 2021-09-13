@@ -38,7 +38,6 @@
             border-bottom-color: $secondary;
             opacity: 0.6;
             animation: spin2 2s linear infinite;
-            -web-animation: spin2 2s linear infinite;
         }   
         .loader2::after{
             position: absolute;
@@ -62,7 +61,6 @@
             height: 50px;
             display: inline-block;
             animation: spin2 2s linear infinite;
-            -web-animation: spin2 2s linear infinite;
         }
 
     }
@@ -83,10 +81,10 @@
     content: "";
     display: none;
 }
-/*@keyframes spin {
+@keyframes spin {
   0% { transform: translate(0,0); }
   100% { transform: translate(0, 20px); }
-}*/
+}
 
 @keyframes display {
     from{

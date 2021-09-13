@@ -472,7 +472,6 @@ a {
   border-bottom-color: #FF79DA;
   opacity: 0.6;
   animation: spin2 2s linear infinite;
-  -web-animation: spin2 2s linear infinite;
 }
 .page__bloc .loader2::after {
   position: absolute;
@@ -496,7 +495,6 @@ a {
   height: 50px;
   display: inline-block;
   animation: spin2 2s linear infinite;
-  -web-animation: spin2 2s linear infinite;
 }
 
 @keyframes spin2 {
@@ -525,10 +523,14 @@ a {
   display: none;
 }
 
-/*@keyframes spin {
-  0% { transform: translate(0,0); }
-  100% { transform: translate(0, 20px); }
-}*/
+@keyframes spin {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
 @keyframes display {
   from {
     display: block;
