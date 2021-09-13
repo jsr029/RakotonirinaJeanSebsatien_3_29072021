@@ -114,8 +114,8 @@
 .container{
     @include mainButton;
 }    
-        @include pulsar;
-        @include pulsarDarker;
+       /* @include pulsar;
+        @include pulsarDarker;*/
 
 @media screen and (min-width:1024px){
 .menus{

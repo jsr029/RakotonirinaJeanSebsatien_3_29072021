@@ -18,7 +18,7 @@
     }
     &__button{
         background: linear-gradient($secondary, $primary) ;
-        box-shadow: 0 5px 15px darken(#cecece, 10%);
+        box-shadow: 0 5px 15px #cecece;
         padding: 1.2rem;
         margin: 1.2rem 0;
         font-size: 16px;
@@ -32,12 +32,13 @@
             /* pose problmeme w3c css validator */
             @include bgButton; 
             //background: lighten($secondary, 1%);
-            animation: pulseDarker 800ms ease-in;
+            //animation: pulseDarker 800ms ease-in;
+            box-shadow: 0 5px 15px darken(#cecece, 10%);
         }
     }
 }
-        @include pulsar;
-        @include pulsarDarker;
+       /* @include pulsar;
+        @include pulsarDarker;*/
 .usage{
     display: flex;
     flex-direction: column;
