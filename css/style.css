@@ -42,6 +42,10 @@ a {
 /* effet ombré sur le bouton  non utilisé*/
 /* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover, puis arret */
 /* effet éclaircissement du bouton principal au hover */
+/* juste pour rire savoir créer une fonction */
+/* l'appel dans scss rem(parametres)*/
+/* savoir créer une map*/
+/* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
 .entete {
   position: relative;
   max-width: 100%;
