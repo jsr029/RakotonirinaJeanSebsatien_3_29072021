@@ -100,13 +100,14 @@
     }
 }
 .restos{
+    max-width: 100%;
     background-color: #eaeaea;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-        transition: 3s linear;
+    transition: 3s linear;
     a{
         text-decoration: none;
         color: black;

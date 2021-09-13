@@ -94,14 +94,17 @@
     }
 @mixin nouveau {
             position: absolute;
+            width: 87px;
+            height: 25px;
             top: 15px;
             right: 15px;
-            padding: 10px 20px;
+            padding: 2px 0 0 0;
             background: $ternary;
             color: darken($ternary, 50%);
-            font-size: 1.3em;
-            font-weight: bold;
+            //font-size: 1.3em;
+            //font-weight: bold;
             border-radius: 5px;
+            text-align: center;
 }
 /* juste pour rire savoir créer une fonction */
 /* l'appel dans scss rem(parametres)*/
