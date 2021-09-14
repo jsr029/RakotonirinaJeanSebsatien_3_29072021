@@ -23,7 +23,8 @@ a {
 }
 
 .container {
-  width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .restos__bloc {
@@ -283,6 +284,7 @@ a {
 .menus .entrees h2 {
   width: 10%;
   border-bottom: 2px solid #99E2D0;
+  margin-left: 22px;
 }
 .menus .entrees__bloc {
   position: relative;
@@ -614,6 +616,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  justify-items: center;
   column-gap: 10px;
 }
 .usage__bloc:hover {
@@ -655,7 +658,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   transition: 3s linear;
 }
 .restos a {
@@ -667,7 +669,7 @@ a {
 }
 .restos__titre {
   width: 100%;
-  padding: 15px 0 30px 10px;
+  padding: 15px 0 15px 20px;
 }
 .restos__bloc {
   width: 310px;
@@ -701,7 +703,7 @@ a {
 .restos__bloc--icone, .restos__bloc--plein, .restos__bloc--cache {
   position: absolute;
   bottom: 35px;
-  right: 35px;
+  right: 20px;
   width: 23px;
   height: 23px;
   font-size: 1.4em;
@@ -741,17 +743,6 @@ a {
 /*********fin loader ******************/
 @media screen and (min-width: 1440px) {
   .usage {
-    justify-content: right;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .container {
-    position: relative;
-    max-width: 1440px;
-    margin: auto;
-  }
-
-  .usage {
     max-width: 100%;
     margin-top: 20px;
     display: grid;
@@ -759,6 +750,7 @@ a {
     grid-template-rows: 30px 150px;
     grid-template-areas: "titre titre titre" "shop menu degust";
     align-items: center;
+    justify-items: center;
   }
 
   .titre {
@@ -785,14 +777,13 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 280px;
-    grid-row-gap: 40px;
     grid-template-areas: "title title title title" "palette note french sens";
     justify-content: space-around;
     align-items: center;
   }
   .restos__bloc {
     width: 90%;
-    margin-left: 25px;
+    margin-left: 20px;
   }
 
   .title {
@@ -815,9 +806,77 @@ a {
     grid-area: sens;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .usage {
+    max-width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    grid-template-rows: 30px 150px;
+    grid-template-areas: "titre titre titre" "shop menu degust";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .titre {
+    grid-area: titre;
+  }
+
+  .shop {
+    grid-area: shop;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .degust {
+    grid-area: degust;
+  }
+
+  .restos {
+    grid-area: restos;
+  }
+
+  .restos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 280px 280px;
+    grid-template-areas: "title title" "palette note " "french sens";
+    justify-items: center;
+  }
+  .restos__bloc {
+    width: 90%;
+  }
+  .restos .title {
+    grid-area: title;
+  }
+  .restos .palette {
+    grid-area: palette;
+  }
+  .restos .note {
+    grid-area: note;
+  }
+  .restos .french {
+    grid-area: french;
+  }
+  .restos .sens {
+    grid-area: sens;
+  }
+}
 @media screen and (max-width: 320px) {
   .container, .pieds {
     max-width: 320px;
+  }
+
+  .restos__titre {
+    padding-left: 10px;
   }
 
   .usage__bloc {
