@@ -79,6 +79,7 @@ a {
 /* l'appel dans scss rem(parametres)*/
 /* savoir créer une map*/
 /* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
+/* équivalent foreach ($colour as $letter=>$letter-color)*/
 .letter-primaire {
   content: "#9356DC";
   color: #9356DC;
@@ -366,46 +367,6 @@ a {
   box-shadow: 0 5px 15px #b5b5b5;
 }
 
-/* @include pulsar;
- @include pulsarDarker;*/
-@media screen and (min-width: 1024px) {
-  .menus {
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .menus .entrees {
-    width: 380px;
-  }
-  .menus .entrees__bloc {
-    width: 380px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .menus .entrees__bloc--titre {
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .menus .entrees__bloc {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menus .entrees__bloc {
-    width: 100%;
-  }
-
-  .entrees__bloc.doublon {
-    display: none;
-  }
-}
 .pieds {
   max-width: 1440px;
   margin: auto;
@@ -855,6 +816,43 @@ a {
   }
   .restos .sens {
     grid-area: sens;
+  }
+}
+.menus {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.menus .entrees {
+  width: 380px;
+}
+.menus .entrees__bloc {
+  width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menus .entrees__bloc--titre {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1024px) {
+  .menus .entrees__bloc {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menus .entrees__bloc {
+    width: 100%;
+  }
+
+  .entrees__bloc.doublon {
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {
