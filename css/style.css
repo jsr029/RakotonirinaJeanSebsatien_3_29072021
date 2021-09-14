@@ -672,7 +672,7 @@ a {
   padding: 15px 0 15px 20px;
 }
 .restos__bloc {
-  width: 310px;
+  width: 90%;
   height: 230px;
   overflow: hidden;
   position: relative;
@@ -739,8 +739,10 @@ a {
     transform: translate(0, -21px);
   }
 }
-/*********** loader test ***********/
-/*********fin loader ******************/
+.doublon {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 1440px) {
   .usage {
     max-width: 100%;
@@ -752,24 +754,19 @@ a {
     align-items: center;
     justify-items: center;
   }
-
-  .titre {
+  .usage .titre {
     grid-area: titre;
   }
-
-  .shop {
+  .usage .shop {
     grid-area: shop;
   }
-
-  .menu {
+  .usage .menu {
     grid-area: menu;
   }
-
-  .degust {
+  .usage .degust {
     grid-area: degust;
   }
-
-  .restos {
+  .usage .restos {
     grid-area: restos;
   }
 
@@ -785,24 +782,19 @@ a {
     width: 90%;
     margin-left: 20px;
   }
-
-  .title {
+  .restos .title {
     grid-area: title;
   }
-
-  .palette {
+  .restos .palette {
     grid-area: palette;
   }
-
-  .note {
+  .restos .note {
     grid-area: note;
   }
-
-  .french {
+  .restos .french {
     grid-area: french;
   }
-
-  .sens {
+  .restos .sens {
     grid-area: sens;
   }
 }
@@ -823,24 +815,19 @@ a {
     align-items: center;
     justify-items: center;
   }
-
-  .titre {
+  .usage .titre {
     grid-area: titre;
   }
-
-  .shop {
+  .usage .shop {
     grid-area: shop;
   }
-
-  .menu {
+  .usage .menu {
     grid-area: menu;
   }
-
-  .degust {
+  .usage .degust {
     grid-area: degust;
   }
-
-  .restos {
+  .usage .restos {
     grid-area: restos;
   }
 
@@ -887,9 +874,6 @@ a {
   .usage__bloc--icone {
     margin: 0 0 0 18px;
   }
-}
-.doublon {
-  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
