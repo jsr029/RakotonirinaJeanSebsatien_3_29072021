@@ -479,7 +479,7 @@ a {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   opacity: 0.6;
-  animation: spin2 1s linear infinite;
+  animation: spin2reverse 500ms linear infinite;
 }
 .page__bloc .loader2::after {
   position: absolute;
@@ -502,7 +502,7 @@ a {
   width: 50px;
   height: 50px;
   display: inline-block;
-  animation: spin2reverse 2s linear infinite;
+  animation: spin2 800ms linear infinite;
 }
 
 @keyframes spin2 {

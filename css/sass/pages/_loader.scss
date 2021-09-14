@@ -38,8 +38,9 @@
             border-top-color: $primary;
             border-bottom-color: $secondary;
             opacity: 0.6;
-            //le fait de placer l'animation dans le parent ralentit l'animation d'où 1s de plus pour l'enfant
-            animation: spin2 1s linear infinite;
+            //le fait de placer l'animation dans le parent ralentit l'animation 
+            //d'où 1s de plus pour l'enfant
+            animation: spin2reverse 500ms linear infinite;
         }   
         .loader2::after{
             position: absolute;
@@ -62,7 +63,7 @@
             width: 50px;
             height: 50px;
             display: inline-block;
-            animation: spin2reverse 2s linear infinite;
+            animation: spin2 800ms linear infinite;
         }
 
     }
