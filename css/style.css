@@ -964,7 +964,7 @@ a {
   flex-flow: row wrap;
   column-gap: 20px;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 .menus .entrees {
   width: 310px;
