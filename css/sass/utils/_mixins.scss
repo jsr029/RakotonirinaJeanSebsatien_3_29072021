@@ -116,10 +116,23 @@
 $colour : (primaire:$primary, secondaire:$secondary, tertiaire:$ternary);
 /* équivalent foreach ($colour as $letter=>$letter-color)*/
 @each $letter, $letter-color in $colour {
-  .letter-#{$letter}{
-      content: "#{$letter-color}";
-    color: $letter-color;
-  }
+    .letter-#{$letter}{
+        color: $letter-color;
+    }
+}
+@for $i from 1 through 8 {
+  .page h2 span:nth-child(n + #{$i}){
+        content: '';
+        @keyframes trans {
+            from{transform: translate(0,-$i*3px);}
+            to{transform: translate(0, $i*2px);}
+        }
+        
+    }
+  .page h2 span:nth-child(n + #{$i}){
+        content: '';
+        animation: trans $i*0.5s cubic-bezier(.91,.42,.18,1);
+    }
 }
 @mixin usageAreaElement {
     .titre{

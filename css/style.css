@@ -81,18 +81,151 @@ a {
 /* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
 /* équivalent foreach ($colour as $letter=>$letter-color)*/
 .letter-primaire {
-  content: "#9356DC";
   color: #9356DC;
 }
 
 .letter-secondaire {
-  content: "#FF79DA";
   color: #FF79DA;
 }
 
 .letter-tertiaire {
-  content: "#99E2D0";
   color: #99E2D0;
+}
+
+.page h2 span:nth-child(n+1) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -3px);
+  }
+  to {
+    transform: translate(0, 2px);
+  }
+}
+
+.page h2 span:nth-child(n+1) {
+  content: "";
+  animation: trans 0.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+2) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -6px);
+  }
+  to {
+    transform: translate(0, 4px);
+  }
+}
+
+.page h2 span:nth-child(n+2) {
+  content: "";
+  animation: trans 1s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+3) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -9px);
+  }
+  to {
+    transform: translate(0, 6px);
+  }
+}
+
+.page h2 span:nth-child(n+3) {
+  content: "";
+  animation: trans 1.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+4) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -12px);
+  }
+  to {
+    transform: translate(0, 8px);
+  }
+}
+
+.page h2 span:nth-child(n+4) {
+  content: "";
+  animation: trans 2s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+5) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -15px);
+  }
+  to {
+    transform: translate(0, 10px);
+  }
+}
+
+.page h2 span:nth-child(n+5) {
+  content: "";
+  animation: trans 2.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+6) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -18px);
+  }
+  to {
+    transform: translate(0, 12px);
+  }
+}
+
+.page h2 span:nth-child(n+6) {
+  content: "";
+  animation: trans 3s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+7) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -21px);
+  }
+  to {
+    transform: translate(0, 14px);
+  }
+}
+
+.page h2 span:nth-child(n+7) {
+  content: "";
+  animation: trans 3.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+8) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -24px);
+  }
+  to {
+    transform: translate(0, 16px);
+  }
+}
+
+.page h2 span:nth-child(n+8) {
+  content: "";
+  animation: trans 4s cubic-bezier(0.91, 0.42, 0.18, 1);
 }
 
 .entete {
@@ -406,7 +539,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 2000;
-  animation: display 3s linear 0.3s forwards;
+  animation: display 4s linear 0.3s forwards;
 }
 .page__bloc {
   width: 350px;
@@ -458,7 +591,15 @@ a {
   opacity: 0.6;
 }
 .page__bloc h2 {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 30px;
+}
+.page__bloc h2 span {
+  font-size: 1.5rem;
 }
 .page__bloc--loader {
   position: relative;
