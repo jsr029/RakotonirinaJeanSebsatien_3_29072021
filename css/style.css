@@ -961,13 +961,13 @@ a {
 }
 .menus {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   column-gap: 20px;
   justify-content: space-around;
   align-items: center;
 }
 .menus .entrees {
-  width: 380px;
+  width: 310px;
 }
 .menus .entrees__bloc {
   width: 380px;
