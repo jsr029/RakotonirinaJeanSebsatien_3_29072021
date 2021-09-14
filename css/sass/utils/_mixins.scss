@@ -114,6 +114,7 @@
 /* savoir créer une map*/
 /* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
 $colour : (primaire:$primary, secondaire:$secondary, tertiaire:$ternary);
+/* équivalent foreach ($colour as $letter=>$letter-color)*/
 @each $letter, $letter-color in $colour {
   .letter-#{$letter}{
       content: "#{$letter-color}";

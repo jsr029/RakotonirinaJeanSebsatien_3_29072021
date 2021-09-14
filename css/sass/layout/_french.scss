@@ -115,44 +115,5 @@
 .container{
     @include mainButton;
 }    
-       /* @include pulsar;
-        @include pulsarDarker;*/
 
-@media screen and (min-width:1024px){
-.menus{
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    justify-content: space-around;
-    align-items: center;
-    .entrees{
-        width: 380px;
-        &__bloc{
-            width: 380px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-                &--titre{
-                    max-width: 100%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-            }
-        }
-    
-    }
-}
-@media screen and (max-width:1024px){
-    .menus .entrees__bloc{
-        width: 300px;
-    }
-}
-@media screen and (max-width:768px){
-    .menus .entrees__bloc{
-        width: 100%;
-    }
-    .entrees__bloc.doublon{
-        display: none;
-    }
-}
+
