@@ -28,6 +28,10 @@
         }
         @include restosAreaElement;
     }
+    .french__bg--top h2 {
+        margin-left: 55px;
+    }
+
 }
 @media screen and (min-width:1024px) and (max-width:1439px){
     .container{
@@ -63,6 +67,9 @@
         }
         @include restosAreaElement;
     }
+    .french__bg--top h2 {
+        margin-left: 85px;
+    }
 }
 .menus{
     display: flex;
@@ -73,12 +80,10 @@
     .entrees{
         max-width: 95%;
         &__bloc{
-            width: 380px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
                 &--titre{
-                    max-width: 100%;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -89,13 +94,10 @@
     }
 @media screen and (max-width:1024px){
     .menus .entrees__bloc{
-        width: 300px;
+        max-width: 1024px;
     }
 }
 @media screen and (max-width:768px){
-    .menus .entrees__bloc{
-        width: 100%;
-    }
     .entrees__bloc.doublon{
         display: none;
     }
@@ -106,6 +108,9 @@
         .entrees{
             &__bloc{
                 max-width: 400px;
+                &--titre{
+                    width: 425px;
+                }
             }
         }
     }
@@ -131,5 +136,8 @@
     }
     .menus{
         flex-flow: column;
+        .entrees__bloc--titre {
+            width: 320px;
+        }
     }
 }

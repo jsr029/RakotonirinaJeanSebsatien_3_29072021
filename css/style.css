@@ -898,6 +898,10 @@ a {
   .restos .sens {
     grid-area: sens;
   }
+
+  .french__bg--top h2 {
+    margin-left: 55px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
@@ -957,6 +961,10 @@ a {
   .restos .sens {
     grid-area: sens;
   }
+
+  .french__bg--top h2 {
+    margin-left: 85px;
+  }
 }
 .menus {
   display: flex;
@@ -969,13 +977,11 @@ a {
   max-width: 95%;
 }
 .menus .entrees__bloc {
-  width: 380px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menus .entrees__bloc--titre {
-  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -983,14 +989,10 @@ a {
 
 @media screen and (max-width: 1024px) {
   .menus .entrees__bloc {
-    width: 300px;
+    max-width: 1024px;
   }
 }
 @media screen and (max-width: 768px) {
-  .menus .entrees__bloc {
-    width: 100%;
-  }
-
   .entrees__bloc.doublon {
     display: none;
   }
@@ -1001,6 +1003,9 @@ a {
   }
   .menus .entrees__bloc {
     max-width: 400px;
+  }
+  .menus .entrees__bloc--titre {
+    width: 425px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -1028,6 +1033,9 @@ a {
 
   .menus {
     flex-flow: column;
+  }
+  .menus .entrees__bloc--titre {
+    width: 320px;
   }
 }
 
