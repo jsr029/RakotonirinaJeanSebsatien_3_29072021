@@ -398,7 +398,7 @@ a {
 }
 .french__bg--top h2 {
   font-family: "shrikhand", cursive;
-  margin-left: 15px;
+  margin-left: 22px;
 }
 .french__bg img {
   width: 100%;
@@ -408,7 +408,6 @@ a {
 }
 
 .menus {
-  width: 95%;
   margin: auto;
 }
 .menus .entrees {
