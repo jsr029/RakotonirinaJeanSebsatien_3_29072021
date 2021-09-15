@@ -1,0 +1,143 @@
+@media screen and (min-width:1440px){
+    .usage{
+        max-width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        grid-template-rows: 30px 150px;
+        grid-template-areas: 
+        "titre titre titre"
+        "shop menu degust";
+        align-items: center;
+        justify-items: center;
+        @include usageAreaElement;
+    }
+    .restos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 280px;
+        //grid-row-gap: 40px;
+        grid-template-areas: 
+        "title title title title"
+        "palette note french sens";
+        justify-content: space-around;
+        align-items: center;
+        &__bloc{
+            width: 90%;
+            margin-left: 20px;
+        }
+        @include restosAreaElement;
+    }
+    .french__bg--top h2 {
+        margin-left: 55px;
+    }
+
+}
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .container{
+        position: relative;
+        max-width: 1440px;
+        margin: auto;
+    }
+    .usage{
+        max-width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        grid-template-rows: 30px 150px;
+        grid-template-areas: 
+        "titre titre titre"
+        "shop menu degust";
+        align-items: center;
+        justify-items: center;
+        @include usageAreaElement;
+    }
+    .restos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 280px 280px;
+        //grid-row-gap: 40px;
+        grid-template-areas: 
+        "title title"
+        "palette note "
+        "french sens";
+        justify-items: center;
+        &__bloc{
+            width: 90%;
+        }
+        @include restosAreaElement;
+    }
+    .french__bg--top h2 {
+        margin-left: 85px;
+    }
+}
+.menus{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+    justify-content: space-around;
+    align-items: baseline;
+    .entrees{
+        max-width: 95%;
+        &__bloc{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+                &--titre{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    
+    }
+@media screen and (max-width:1024px){
+    .menus .entrees__bloc{
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width:768px){
+    .entrees__bloc.doublon{
+        display: none;
+    }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+    .menus{
+        flex-flow: column;
+        .entrees{
+            &__bloc{
+                max-width: 400px;
+                &--titre{
+                    width: 425px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:320px) and (max-width:375px){
+    .menus{
+        flex-flow: column;
+    }
+}
+@media screen and (max-width:320px){
+    .container, .pieds{
+        max-width: 320px;
+    }
+    .restos__titre{
+        padding-left: 10px;
+    }
+    .usage__bloc{
+        width: 275px;
+        padding-left: 0;
+    }
+    .usage__bloc--icone {
+        margin: 0 0 0 18px;
+    }
+    .menus{
+        flex-flow: column;
+        .entrees__bloc--titre {
+            width: 320px;
+        }
+    }
+}

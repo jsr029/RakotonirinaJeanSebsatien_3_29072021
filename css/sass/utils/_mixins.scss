@@ -1,0 +1,171 @@
+/* effet sur restos__bloc, chgt d'échelle au hover dans page index */
+@mixin scaler($size:1.05) {
+    transform: scale($size);
+}
+/* effet pulsar sur bouton principal */
+/*@mixin pulsar {
+    @keyframes pulse{
+        0%{
+            box-shadow: 0 0 0 0 rgba(255,158,74,.91) , 0 0 0 0 rgba(255,158,74,.91);
+        }
+        40%{
+            box-shadow: 0 0 0 50px rgba(255,158,74,0) , 0 0 0 0 rgba(255,158,74,.91);
+        }
+        80%{
+            box-shadow: 0 0 0 50px rgba(255,158,74,0) , 0 0 0 30px rgba(255,158,74,0);
+        }
+        100%{
+            box-shadow: 0 0 0 0 rgba(255,158,74,0) , 0 0 0 30px rgba(255,158,74,0);
+        }
+    }
+}*/
+/* effet pulsar sur bouton principal au hover avec arret du pulsar */
+
+/*@mixin pulsarDarker {
+    @keyframes pulseDarker{
+        0%{
+            box-shadow: 0 0 0 0 rgba(65, 40, 18, 0.91) , 0 0 0 0 rgba(97, 60, 27, 0.91);
+        }
+        40%{
+            box-shadow: 0 0 0 50px rgba(155, 96, 45, 0) , 0 0 0 0 rgba(114, 71, 33, 0.91);
+        }
+        80%{
+            box-shadow: 0 0 0 50px rgba(148, 92, 43, 0) , 0 0 0 30px rgba(143, 88, 40, 0);
+        }
+        100%{
+            box-shadow: 0 0 0 0 rgba(143, 89, 41, 0) , 0 0 0 30px rgba(134, 84, 40, 0);
+        }
+    }
+}*/
+/* colorie graduellement le sélecteur ici, ce sera l'icone coeur plein de la page index avec accueil.css*/
+@mixin igradient {
+    background:-moz-linear-gradient(to top, $secondary 0%, $primary 100%); 
+    background: -webkit-linear-gradient(to top, $secondary 0%,$primary 100%); 
+    background: linear-gradient(to top, $secondary 0%, $primary 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* erreur dans css validator text n'est pas une valeur*/
+    //background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+/* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */
+@mixin progressHeart {
+    @keyframes monte {
+        from{transform: translate(0,0);}
+        to{transform: translate(0,-21px);}
+    }
+}
+/* effet ombré sur le bouton  non utilisé*/
+@mixin  boxShadowButton ($pxone:0px, $pxtwo:5px, $pxthree:15px, $couleur:grey){
+    box-shadow: $pxone $pxtwo $pxthree $couleur;
+}
+/* bouton principal style et animation le pulsar s'assombrit grace à l'appel include bgButton au hover, puis arret */
+@mixin mainButton{
+    &__button{
+        text-align: center;
+        padding: 20px 40px 40px 40px;
+        background: #f6f6f6;
+        &--order{
+            width: 200px;
+            box-shadow: 0 5px 15px #cecece;
+            background: linear-gradient($secondary, $primary);
+            padding: 20px;
+            border-radius: 30px; 
+            color: white; 
+            font-weight: bold;
+            font-size: 1.1em;
+            border:  none;
+            cursor: pointer;
+            //animation: pulse 1.7s ease-in-out infinite;
+            &:hover{
+                /* pose probleme à w3c css validator */
+                @include bgButton; 
+                //background: lighten($secondary, 1%);
+                //animation: pulseDarker 800ms ease-in;
+                box-shadow: 0 5px 15px darken(#cecece, 10%);
+               }
+        } 
+    }
+
+}
+/* effet éclaircissement du bouton principal au hover */
+@mixin bgButton($first: $primary, $second:$secondary){
+        background: linear-gradient(lighten($second, 10%), lighten($first, 2%));
+    }
+@mixin nouveau {
+            position: absolute;
+            width: 87px;
+            height: 25px;
+            top: 15px;
+            right: 15px;
+            padding: 2px 0 0 0;
+            background: $ternary;
+            color: darken($ternary, 50%);
+            //font-size: 1.3em;
+            //font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+}
+/* juste pour rire savoir créer une fonction */
+/* l'appel dans scss rem(parametres)*/
+@function rem($size, $base:16){
+    @return 1rem * $size / $base;
+}
+/* savoir créer une map*/
+/* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
+$colour : (primaire:$primary, secondaire:$secondary, tertiaire:$ternary);
+/* équivalent foreach ($colour as $letter=>$letter-color)*/
+@each $letter, $letter-color in $colour {
+    .letter-#{$letter}{
+        color: $letter-color;
+    }
+}
+@for $i from 1 through 8 {
+  .page h2 span:nth-child(n + #{$i}){
+        content: '';
+        @keyframes trans {
+            from{transform: translate(0,-$i*3px);}
+            to{transform: translate(0, $i*2px);}
+        }
+        
+    }
+  .page h2 span:nth-child(n + #{$i}){
+        content: '';
+        animation: trans $i*0.5s cubic-bezier(.91,.42,.18,1);
+    }
+}
+@mixin usageAreaElement {
+    .titre{
+        grid-area: titre;
+    }
+    .shop{
+        grid-area: shop;
+    }
+    .menu{
+        grid-area: menu;
+    }
+    .degust{
+        grid-area: degust;
+    }
+    .restos{
+        grid-area: restos;
+    }
+
+}
+@mixin restosAreaElement {
+    .title{
+        grid-area: title;
+    }
+    .palette{
+        grid-area: palette;
+    }
+    .note{
+        grid-area: note;
+    }
+    .french{
+        grid-area: french;
+    }
+    .sens{
+        grid-area: sens;
+    }
+}

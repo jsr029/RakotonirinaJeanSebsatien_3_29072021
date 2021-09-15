@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "description": "PROJET 3 : Dynamisez une page web avec des animations CSS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsr029/RakotonirinaJeanSebsatien_3_29072021.git"
+  },
+  "author": "jsr029",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsr029/RakotonirinaJeanSebsatien_3_29072021/issues"
+  },
+  "homepage": "https://github.com/jsr029/RakotonirinaJeanSebsatien_3_29072021#readme"
+}

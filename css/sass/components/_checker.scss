@@ -1,0 +1,30 @@
+.menus{
+    .entrees{
+        &__bloc{
+            &--icone{
+            position: absolute;
+            right: -89px;
+            opacity: 0;
+            visibility: hidden;
+            width: 89px;
+            height: 82px;
+            padding: 20px;
+            font-size: 2em;
+            background-color: $ternary;
+            color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: opacity 1s, visibility 1s, right 300ms ease-in;
+            }
+            &--titre:hover + .entrees__bloc--icone{
+                position: relative;
+                right: 0;
+                visibility: visible;
+                opacity: 1;
+            }            
+            &:hover .icone{
+                animation: icone 600ms linear 0.1s forwards;
+            }
+        }
+    }
+}
