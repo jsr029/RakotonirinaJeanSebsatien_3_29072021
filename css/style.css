@@ -970,7 +970,6 @@ a {
   display: flex;
   flex-flow: row wrap;
   column-gap: 20px;
-  justify-content: space-around;
   align-items: baseline;
 }
 .menus .entrees {
