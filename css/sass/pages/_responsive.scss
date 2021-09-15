@@ -71,7 +71,7 @@
     justify-content: space-around;
     align-items: baseline;
     .entrees{
-        width: 310px;
+        max-width: 95%;
         &__bloc{
             width: 380px;
             white-space: nowrap;
@@ -100,6 +100,21 @@
         display: none;
     }
 }
+@media screen and (min-width:375px) and (max-width:425px){
+    .menus{
+        flex-flow: column;
+        .entrees{
+            &__bloc{
+                max-width: 400px;
+            }
+        }
+    }
+}
+@media screen and (min-width:320px) and (max-width:375px){
+    .menus{
+        flex-flow: column;
+    }
+}
 @media screen and (max-width:320px){
     .container, .pieds{
         max-width: 320px;
@@ -113,5 +128,8 @@
     }
     .usage__bloc--icone {
         margin: 0 0 0 18px;
+    }
+    .menus{
+        flex-flow: column;
     }
 }
