@@ -1,0 +1,21 @@
+.head{
+    &__location{
+        width: 100%;
+        background: #eaeaea;
+    }
+}
+.explore{
+    background: lighten($color-secondary, 25%) ;
+        padding-bottom: 1rem;
+    p{
+        padding-bottom: 1rem;
+    }
+    &__btn{
+        padding: 1rem;
+        &--discover{
+            background: linear-gradient($color-secondary, $color-primary);
+            border: none;
+            color: white;
+        }
+    }
+}

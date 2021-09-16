@@ -5,7 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
-  width: 100%;
   position: relative;
   font-family: "Roboto", sans-serif;
 }
@@ -24,6 +23,73 @@ a {
 .global {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.head__location {
+  width: 100%;
+  background: #eaeaea;
+}
+
+.explore {
+  background: #fff9fd;
+  padding-bottom: 1rem;
+}
+.explore p {
+  padding-bottom: 1rem;
+}
+.explore__btn {
+  padding: 1rem;
+}
+.explore__btn--discover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  color: white;
+}
+
+.head {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head__logo {
+  width: 100%;
+  padding: 1rem 1rem 0.2rem 1rem;
+  border-bottom: 2px solid #d5d5d5;
+  text-align: center;
+}
+.head__logo img {
+  width: 155px;
+}
+.head__location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.2rem 0 1rem 0;
+}
+.head__location--ville {
+  width: 135px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.explore h1 {
+  padding: 1.5rem 0 1rem 0;
+}
+.explore__btn--discover {
+  padding: 0.9rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px #cecece;
 }
 
 /*# sourceMappingURL=style.css.map */
