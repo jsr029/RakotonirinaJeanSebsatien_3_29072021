@@ -21,9 +21,9 @@ a {
   color: black;
 }
 
-.container {
+.global {
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
