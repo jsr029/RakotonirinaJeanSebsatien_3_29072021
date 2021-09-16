@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* effet éclaircissement du bouton principal au hover */
 /********************* couleurs et texte******************************************
              primaire #9356DC secondaire #FF79DA tertiaire #99E2D0
                            Texte Roboto
@@ -44,6 +46,10 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
+}
+.explore__btn--discover:hover {
+  background: linear-gradient(#fface8, #985ede);
+  box-shadow: 0 5px 15px #b5b5b5;
 }
 
 .head {

@@ -16,6 +16,9 @@
             background: linear-gradient($color-secondary, $color-primary);
             border: none;
             color: white;
+            &:hover{
+                @include btnLightener;
+            }
         }
     }
 }
