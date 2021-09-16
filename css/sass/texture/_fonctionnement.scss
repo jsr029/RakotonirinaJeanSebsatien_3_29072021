@@ -1,0 +1,19 @@
+.fonctionnement{
+    .nav{
+        background: lighten($color-secondary, 25%) ;
+        cursor: pointer;
+        &__choice{
+            &--number{
+                background: $color-primary;
+                border-radius: 50%;
+                color: white;
+            }
+        }
+    }
+}
+.nav:hover{
+    background: lighten($color-secondary, 20%) ;
+}
+.nav:hover > .nav__choice > .nav__choice--icone i{
+    color:$color-primary;
+}
