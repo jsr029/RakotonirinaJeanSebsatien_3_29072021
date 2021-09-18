@@ -593,7 +593,7 @@ a {
     justify-content: space-around;
   }
   .restos__bloc--a {
-    width: 475px;
+    width: 445px;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
