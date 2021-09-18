@@ -9,4 +9,14 @@
             width: 335px;
         }
     }
+
+.ristos h1 {
+        padding-left: 2rem;
+    }
+.menus{
+        width:430px;
+        &__blox{
+            width: 400px;
+        }
+    }
 }

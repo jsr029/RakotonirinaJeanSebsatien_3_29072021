@@ -1,0 +1,46 @@
+.blocmenus{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #f6f6f6;
+    padding-bottom: 1.5rem;
+}
+.menus{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    h2, &__bloc--details{
+        font-size: 1rem;
+    }
+    h2{
+        border-bottom: 2px solid $color-tertiary;
+        width: 38px;
+        margin-left: 1rem;
+    }
+    &__bloc{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem 1rem;
+        background: white;
+        margin-top: 20px;
+        border-radius: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+            h3, p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                }
+            span{
+                margin-right: 10px;
+                }
+        &--details{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

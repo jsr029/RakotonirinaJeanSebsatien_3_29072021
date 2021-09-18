@@ -1,6 +1,7 @@
 @import './utils/flexColumn';
 @import './utils/variables';
 @import './utils/explore';
+@import './utils/menus';
 @import './base/global';
 @import './utils/flexRow';
 @import './utils/heart';
@@ -8,13 +9,15 @@
 @import './texture/head';
 @import './layout/footer';
 @import './pages/loader';
+@import './pages/menus';
+@import './pages/ristos';
 @import './texture/fonctionnement';
 @import './texture/restos';
 @import './position/head';
 @import './position/fonctionnement';
 @import './position/restos';
-@import './position/mobilemin1440';
-@import './position/mobilemin1024';
+@import './position/mobile1440';
+@import './position/mobile1024';
 @import './position/mobile768';
 @import './position/mobile425';
 @import './position/mobile375';
