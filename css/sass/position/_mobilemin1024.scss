@@ -4,8 +4,9 @@
 }
     .restos__bloc{
         column-gap: 1rem;
+        justify-content: space-around;
         &--a{
-            width: 320px;
+            width: 335px;
         }
     }
 }

@@ -301,9 +301,10 @@ a {
 
   .restos__bloc {
     column-gap: 1rem;
+    justify-content: space-around;
   }
   .restos__bloc--a {
-    width: 320px;
+    width: 335px;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
