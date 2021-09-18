@@ -2,7 +2,8 @@
     .nav{
         background: lighten($color-secondary, 25%) ;
         cursor: pointer;
-        &__choice{
+        box-shadow: 0 5px 15px #cecece;   
+         &__choice{
             &--number{
                 background: $color-primary;
                 border-radius: 50%;
@@ -13,6 +14,7 @@
 }
 .nav:hover{
     background: lighten($color-secondary, 20%) ;
+    box-shadow: 0 5px 15px darken(#cecece, 10%);
 }
 .nav:hover > .nav__choice > .nav__choice--icone i{
     color:$color-primary;

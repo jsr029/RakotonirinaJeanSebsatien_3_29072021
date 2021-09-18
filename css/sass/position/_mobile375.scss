@@ -1,2 +1,12 @@
 @media screen and (min-width:320px) and (max-width:375px){
+.fonctionnement .nav {
+    width: 335px;
+}
+
+.restos__bloc{
+    column-gap: 2.5rem;
+    &--a{
+        width: 335px;
+        }
+    }
 }
