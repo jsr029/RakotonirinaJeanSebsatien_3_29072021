@@ -28,6 +28,157 @@ a {
 }
 
 /* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */
+/* savoir créer une map*/
+/* l'appel dans scss map-get($colour, primaire) on obtient la valeur; idéal dans une mixin*/
+/* équivalent foreach ($colour as $letter=>$letter-color)*/
+.letter-primaire {
+  color: #9356DC;
+}
+
+.letter-secondaire {
+  color: #FF79DA;
+}
+
+.letter-tertiaire {
+  color: #99E2D0;
+}
+
+.page h2 span:nth-child(n+1) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -3px);
+  }
+  to {
+    transform: translate(0, 2px);
+  }
+}
+
+.page h2 span:nth-child(n+1) {
+  content: "";
+  animation: trans 0.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+2) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -6px);
+  }
+  to {
+    transform: translate(0, 4px);
+  }
+}
+
+.page h2 span:nth-child(n+2) {
+  content: "";
+  animation: trans 1s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+3) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -9px);
+  }
+  to {
+    transform: translate(0, 6px);
+  }
+}
+
+.page h2 span:nth-child(n+3) {
+  content: "";
+  animation: trans 1.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+4) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -12px);
+  }
+  to {
+    transform: translate(0, 8px);
+  }
+}
+
+.page h2 span:nth-child(n+4) {
+  content: "";
+  animation: trans 2s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+5) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -15px);
+  }
+  to {
+    transform: translate(0, 10px);
+  }
+}
+
+.page h2 span:nth-child(n+5) {
+  content: "";
+  animation: trans 2.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+6) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -18px);
+  }
+  to {
+    transform: translate(0, 12px);
+  }
+}
+
+.page h2 span:nth-child(n+6) {
+  content: "";
+  animation: trans 3s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+7) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -21px);
+  }
+  to {
+    transform: translate(0, 14px);
+  }
+}
+
+.page h2 span:nth-child(n+7) {
+  content: "";
+  animation: trans 3.5s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
+.page h2 span:nth-child(n+8) {
+  content: "";
+}
+@keyframes trans {
+  from {
+    transform: translate(0, -24px);
+  }
+  to {
+    transform: translate(0, 16px);
+  }
+}
+
+.page h2 span:nth-child(n+8) {
+  content: "";
+  animation: trans 4s cubic-bezier(0.91, 0.42, 0.18, 1);
+}
+
 .head__location {
   width: 100%;
   background: #eaeaea;
@@ -81,6 +232,131 @@ a {
   margin-right: 10px;
 }
 
+.page {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  animation: display 4s linear 0.3s forwards;
+}
+.page__bloc {
+  width: 350px;
+  position: absolute;
+  /* postulat de départ */
+  top: 50%;
+  left: 50%;
+  /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%);
+  /* décalage de 50% de sa propre taille */
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.page__bloc .loader, .page__bloc .loader2 {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #99E2D0;
+  border-bottom-color: #99E2D0;
+}
+.page__bloc .loader::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  opacity: 0.6;
+  animation: spin2reverse 500ms linear infinite;
+}
+.page__bloc .loader2::after {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  opacity: 0.6;
+}
+.page__bloc h2 {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 30px;
+}
+.page__bloc h2 span {
+  font-size: 1.5rem;
+}
+.page__bloc--loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  animation: spin2 800ms linear infinite;
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.page:before {
+  content: "";
+  display: block;
+}
+
+.page:after {
+  content: "";
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+@keyframes display {
+  from {
+    display: block;
+    visibility: visible;
+  }
+  to {
+    display: none;
+    visibility: hidden;
+  }
+}
 .fonctionnement .nav {
   background: #fff9fd;
   cursor: pointer;
