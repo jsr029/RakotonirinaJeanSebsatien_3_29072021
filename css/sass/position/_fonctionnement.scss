@@ -25,6 +25,9 @@
             margin: 0.5rem;
             &--txt{
                 padding-left: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             &--number{
                 position: absolute;

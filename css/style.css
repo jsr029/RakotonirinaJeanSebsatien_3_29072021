@@ -689,6 +689,9 @@ main {
 }
 .fonctionnement .nav__choice--txt {
   padding-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .fonctionnement .nav__choice--number {
   position: absolute;
@@ -810,7 +813,7 @@ main {
     justify-content: space-around;
   }
   .restos__bloc--a {
-    width: 20%;
+    width: 22%;
   }
 
   .ristos h1 {
