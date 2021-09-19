@@ -1,0 +1,43 @@
+.menus{
+        &__bloc{
+            &--icone{
+            position: absolute;
+            top: 0;
+            right: -50px;
+            opacity: 0;
+            visibility: hidden;
+            width: 59px;
+            height: 61px;
+            padding: 15px;
+            font-size: 1.5em;
+            background-color: $color-tertiary;
+            color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: opacity 1s, visibility 1s, right 300ms ease-in;
+            }
+            &--titre, &--titre-details{
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;            }
+            &:hover > &--icone{
+                position: relative;
+                top: -8px;
+                right: -20px;
+                visibility: visible;
+                opacity: 1;
+            }            
+            &:hover{
+                box-shadow: 0 5px 15px darken(#f6f6f6, 20%);
+            }
+            &:hover .icone{
+                animation: icone 600ms linear 0.1s forwards;
+            }
+        }
+}
+
+@keyframes icone {
+    from{transform: rotate(180deg);}
+    to{transform: rotate(0);}
+}

@@ -1,11 +1,55 @@
 @charset "UTF-8";
 /* effet éclaircissement du bouton principal au hover */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.menus__bloc--icone {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  opacity: 0;
+  visibility: hidden;
+  width: 59px;
+  height: 61px;
+  padding: 15px;
+  font-size: 1.5em;
+  background-color: #99E2D0;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: opacity 1s, visibility 1s, right 300ms ease-in;
+}
+.menus__bloc--titre, .menus__bloc--titre-details {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menus__bloc:hover > .menus__bloc--icone {
+  position: relative;
+  top: -8px;
+  right: -20px;
+  visibility: visible;
+  opacity: 1;
+}
+.menus__bloc:hover {
+  box-shadow: 0 5px 15px #c3c3c3;
+}
+.menus__bloc:hover .icone {
+  animation: icone 600ms linear 0.1s forwards;
+}
+
+@keyframes icone {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 /********************* couleurs et texte******************************************
              primaire #9356DC secondaire #FF79DA tertiaire #99E2D0
                            Texte Roboto
 **********************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -366,8 +410,6 @@ a {
 }
 
 .menus {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 20px;
 }
 .menus h2, .menus__bloc--details {
@@ -379,16 +421,21 @@ a {
   margin-left: 1rem;
 }
 .menus__bloc {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+  position: relative;
   padding: 0.5rem 1rem;
   background: white;
   margin-top: 20px;
   border-radius: 15px;
+  cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  cursor: pointer;
+  box-shadow: 0 5px 15px #dddddd;
 }
 .menus__bloc h3, .menus__bloc p {
   white-space: nowrap;
@@ -398,7 +445,7 @@ a {
 .menus__bloc span {
   margin-right: 10px;
 }
-.menus__bloc--details {
+.menus__bloc--titre-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
