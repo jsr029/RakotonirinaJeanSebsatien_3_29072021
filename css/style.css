@@ -51,6 +51,10 @@
                            Texte Roboto
 **********************************************************************************/
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   position: relative;
   font-family: "Roboto", sans-serif;
 }
@@ -69,6 +73,7 @@ a {
 .global {
   max-width: 1440px;
   margin: 0 auto;
+  flex: 1;
 }
 
 /* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */
@@ -225,11 +230,11 @@ a {
 
 .head__location {
   width: 100%;
-  background: #eaeaea;
+  background: white;
 }
 
 .explore {
-  background: #fff9fd;
+  background: #f6f6f6;
   padding-bottom: 1rem;
 }
 .explore p {
@@ -564,7 +569,7 @@ a {
 }
 
 .fonctionnement .nav {
-  background: #fff9fd;
+  background: #f6f6f6;
   cursor: pointer;
   box-shadow: 0 5px 15px #cecece;
 }
@@ -575,7 +580,7 @@ a {
 }
 
 .nav:hover {
-  background: #ffdff6;
+  background: #f5edff;
   box-shadow: 0 5px 15px #b5b5b5;
 }
 
@@ -584,7 +589,7 @@ a {
 }
 
 .restos {
-  background: #fff9fd;
+  background: #f6f6f6;
 }
 .restos__bloc--a {
   box-shadow: 0 5px 15px #cecece;
@@ -851,7 +856,7 @@ a {
   }
 
   .restos__bloc {
-    column-gap: 2.2rem;
+    column-gap: 0rem;
   }
   .restos__bloc--a {
     width: 355px;
