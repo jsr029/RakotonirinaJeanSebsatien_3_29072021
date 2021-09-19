@@ -718,10 +718,10 @@ a {
   }
 
   .menus {
-    width: 430px;
+    max-width: 31%;
   }
   .menus__blox {
-    width: 400px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -742,14 +742,20 @@ a {
   }
 
   .menus {
-    max-width: 31%;
+    width: 31%;
   }
   .menus__bloc {
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  .fonctionnement .nav {
+  .fonctionnement {
+    max-width: 100%;
+  }
+  .fonctionnement .Fbloc {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc .nav {
     width: 335px;
   }
 
@@ -761,11 +767,11 @@ a {
   }
 
   .ristos h1 {
-    padding-left: 0.5rem;
+    padding-left: 1.2rem;
   }
 
   .menus {
-    width: 31%;
+    width: 100%;
   }
   .menus__bloc {
     width: 100%;
@@ -785,10 +791,10 @@ a {
   }
 
   .menus {
-    max-width: 95%;
+    width: 100%;
   }
   .menus__bloc {
-    width: 100%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -804,14 +810,14 @@ a {
   }
 }
 .ristos h1 {
-  padding-left: 1rem;
+  padding-left: 1em;
 }
 
 .menus {
-  max-width: 95%;
+  width: 95%;
 }
 .menus__bloc {
-  width: 100%;
+  width: 95%;
 }
 
 @media screen and (max-width: 320px) {
