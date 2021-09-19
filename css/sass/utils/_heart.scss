@@ -12,6 +12,6 @@
 @mixin progressHeart {
     @keyframes monte {
         from{transform: translate(0,0);}
-        to{transform: translate(0,-21px);}
+        to{transform: translate(0,-20px);}
     }
 }
