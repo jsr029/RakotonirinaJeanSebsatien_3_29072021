@@ -75,7 +75,7 @@ a {
   min-height: 100vh;
 }
 
-.head, .pgge, .explore, .fonctionnement, .restos, .pieds {
+.head, .pgge, .explore, .fonctionnement, .restos, .blocmenus, .ristos, .pieds {
   flex: 1;
 }
 
@@ -939,10 +939,10 @@ a {
 }
 
 .menus {
-  width: 95%;
+  max-width: 95%;
 }
 .menus__bloc {
-  width: 95%;
+  width: 100%;
 }
 
 @media screen and (max-width: 320px) {
