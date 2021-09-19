@@ -555,7 +555,7 @@ main {
 }
 .ristos__titre .bloc_txt--cache {
   z-index: 300;
-  background: white;
+  background: #f6f6f6;
 }
 .ristos__titre .bloc_txt--plein {
   z-index: 200;
