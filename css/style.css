@@ -68,14 +68,14 @@ a {
 }
 
 .global {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
-main {
+.head, .pgge, .explore, .fonctionnement, .restos, .pieds {
   flex: 1;
 }
 
@@ -803,7 +803,7 @@ main {
     transform: translate(0, -20px);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 3440px) {
   .fonctionnement .nav {
     width: 29%;
   }
@@ -828,8 +828,14 @@ main {
   }
 }
 @media screen and (max-width: 1024px) {
-  .fonctionnement .nav {
-    width: 29%;
+  .fonctionnement {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc .nav {
+    width: 95%;
   }
 
   .restos__bloc {
@@ -837,7 +843,11 @@ main {
     justify-content: space-around;
   }
   .restos__bloc--a {
-    width: 445px;
+    width: 45%;
+  }
+  .restos__bloc .bloc__image--img {
+    width: 100%;
+    height: 100px;
   }
 
   .ristos h1 {
@@ -859,14 +869,14 @@ main {
     width: 100%;
   }
   .fonctionnement .Fbloc .nav {
-    width: 90%;
+    width: 95%;
   }
 
   .restos__bloc {
     column-gap: 0rem;
   }
   .restos__bloc--a {
-    width: 355px;
+    width: 45%;
   }
 
   .ristos h1 {
@@ -881,12 +891,18 @@ main {
   }
 }
 @media screen and (max-width: 425px) {
-  .fonctionnement .nav {
-    width: 385px;
+  .fonctionnement {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc .nav {
+    width: 91%;
   }
 
   .restos__bloc--a {
-    width: 390px;
+    width: 95%;
   }
 
   .ristos h1 {
@@ -901,15 +917,21 @@ main {
   }
 }
 @media screen and (max-width: 375px) {
-  .fonctionnement .nav {
-    width: 335px;
+  .fonctionnement {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc {
+    width: 100%;
+  }
+  .fonctionnement .Fbloc .nav {
+    width: 91%;
   }
 
   .restos__bloc {
     column-gap: 2.5rem;
   }
   .restos__bloc--a {
-    width: 335px;
+    width: 91%;
   }
 }
 .ristos h1 {
@@ -925,11 +947,11 @@ main {
 
 @media screen and (max-width: 320px) {
   .fonctionnement .nav {
-    width: 280px;
+    width: 100%;
   }
 
   .restos__bloc--a {
-    width: 295px;
+    width: 91%;
   }
 
   .ristos h1 {

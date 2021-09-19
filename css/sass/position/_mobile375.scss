@@ -1,11 +1,17 @@
 @media screen and (max-width:375px){
-.fonctionnement .nav {
-    width: 335px;
-}
+    .fonctionnement{
+        width: 100%;
+        .Fbloc{
+            width: 100%;
+            .nav {
+                width: 91%;
+            }
+        }
+    }
 .restos__bloc{
     column-gap: 2.5rem;
     &--a{
-        width: 335px;
+        width: 91%;
         }
     }
 }
