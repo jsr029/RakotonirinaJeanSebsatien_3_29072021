@@ -793,7 +793,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement .nav {
-    width: 455px;
+    width: 31%;
   }
 
   .restos__bloc {
@@ -801,7 +801,7 @@ a {
     justify-content: space-around;
   }
   .restos__bloc--a {
-    width: 335px;
+    width: 20%;
   }
 
   .ristos h1 {
@@ -817,7 +817,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .fonctionnement .nav {
-    width: 305px;
+    width: 31%;
   }
 
   .restos__bloc {
@@ -839,15 +839,15 @@ a {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .fonctionnement {
-    max-width: 100%;
+    width: 100%;
   }
   .fonctionnement .Fbloc {
     width: 100%;
   }
   .fonctionnement .Fbloc .nav {
-    width: 335px;
+    width: 95%;
   }
 
   .restos__bloc {
