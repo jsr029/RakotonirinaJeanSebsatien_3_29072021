@@ -1,6 +1,6 @@
 .fonctionnement{
     .nav{
-        background: lighten($color-secondary, 25%) ;
+        background: #f6f6f6 ;
         cursor: pointer;
         box-shadow: 0 5px 15px #cecece;   
          &__choice{
@@ -13,7 +13,7 @@
     }
 }
 .nav:hover{
-    background: lighten($color-secondary, 20%) ;
+    background: #f5edff ;
     box-shadow: 0 5px 15px darken(#cecece, 10%);
 }
 .nav:hover > .nav__choice > .nav__choice--icone i{

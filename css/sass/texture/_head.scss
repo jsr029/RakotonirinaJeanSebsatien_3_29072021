@@ -1,11 +1,11 @@
 .head{
     &__location{
         width: 100%;
-        background: #eaeaea;
+        background: white;
     }
 }
 .explore{
-        background: lighten($color-secondary, 25%) ;
+        background: #f6f6f6 ;
         padding-bottom: 1rem;
     p{
         padding-bottom: 1rem;
