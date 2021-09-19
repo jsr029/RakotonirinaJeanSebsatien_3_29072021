@@ -8,13 +8,18 @@
 }
 .menus{
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadein 3s linear 1s forwards;
     h2, &__bloc--details{
-        font-size: 1rem;
+    font-size: 1rem;
     }
     h2{
         border-bottom: 2px solid $color-tertiary;
         width: 38px;
         margin-left: 1rem;
+    }
+    .doublon{
+        display: none;
     }
     &__bloc{
         width: 100%;
@@ -47,11 +52,26 @@
             }
     }
 }
-.explore__btn
-    {
-        &--discover{
-            width: 185px;
-            height: 50px;
-            font-size: 1.2rem;
-        }
+.btn__order--launch{
+    width: 185px;
+    height: 50px;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient($color-secondary, $color-primary);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px darken(#f6f6f6, 10%);   
+    &:hover{
+        @include btnLightener;
+    }    
+}
+@keyframes fadein {
+    from {
+        opacity:0;
     }
+    to {
+        opacity:1;
+    }
+}
+

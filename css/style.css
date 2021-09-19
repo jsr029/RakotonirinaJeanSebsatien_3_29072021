@@ -411,6 +411,8 @@ a {
 
 .menus {
   margin-bottom: 20px;
+  opacity: 0;
+  animation: fadein 3s linear 1s forwards;
 }
 .menus h2, .menus__bloc--details {
   font-size: 1rem;
@@ -419,6 +421,9 @@ a {
   border-bottom: 2px solid #99E2D0;
   width: 38px;
   margin-left: 1rem;
+}
+.menus .doublon {
+  display: none;
 }
 .menus__bloc {
   width: 100%;
@@ -451,12 +456,30 @@ a {
   justify-content: space-between;
 }
 
-.explore__btn--discover {
+.btn__order--launch {
   width: 185px;
   height: 50px;
   font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px #dddddd;
+}
+.btn__order--launch:hover {
+  background: linear-gradient(#fface8, #985ede);
+  box-shadow: 0 5px 15px #b5b5b5;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .head__logo {
   position: relative;
   display: flex;
@@ -686,6 +709,21 @@ a {
   justify-content: center;
   row-gap: 2rem;
   column-gap: 1rem;
+}
+.restos__bloc .new.active {
+  position: absolute;
+  width: 87px;
+  height: 25px;
+  top: 15px;
+  right: 15px;
+  padding: 2px 0 0 0;
+  background: #99E2D0;
+  color: #1b6150;
+  border-radius: 5px;
+  text-align: center;
+}
+.restos__bloc .new.notactive {
+  display: none;
 }
 .restos__bloc--a {
   position: relative;
