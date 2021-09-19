@@ -793,7 +793,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement .nav {
-    width: 31%;
+    width: 29%;
   }
 
   .restos__bloc {
@@ -817,7 +817,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .fonctionnement .nav {
-    width: 31%;
+    width: 29%;
   }
 
   .restos__bloc {
@@ -847,7 +847,7 @@ a {
     width: 100%;
   }
   .fonctionnement .Fbloc .nav {
-    width: 95%;
+    width: 90%;
   }
 
   .restos__bloc {
