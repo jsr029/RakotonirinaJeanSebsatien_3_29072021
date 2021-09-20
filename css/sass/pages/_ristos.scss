@@ -1,12 +1,16 @@
 .head{
     &__logo{
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        background: white;
         @include flexRow;
         justify-content: center;
         max-width: 100%;
         a{
             position: absolute;
-            top: 45%;
+            top: 35%;
             left: 1rem;
         }
     }

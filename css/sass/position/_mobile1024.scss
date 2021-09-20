@@ -22,10 +22,13 @@
     .ristos h1 {
         padding-left: 0.5rem;
     }
-    .menus{
-        width: 31%;
-        &__bloc{
-            width: 100%;
+    .blocmenus{
+        width: 100%;
+        .menus{
+            width: 31%;
+            &__bloc{
+                width: 100%;
+            }
         }
     }
 }
