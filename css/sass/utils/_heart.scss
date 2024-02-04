@@ -1,0 +1,17 @@
+@mixin heartGradient {
+    background:-moz-linear-gradient(to top, $color-secondary 0%, $color-primary 100%); 
+    background: -webkit-linear-gradient(to top, $color-secondary 0%,$color-primary 100%); 
+    background: linear-gradient(to top, $color-secondary 0%, $color-primary 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* erreur dans css validator text n'est pas une valeur*/
+    //background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+/* Action de déplacer l'élément masquant le coeur plein vers le haut, donner effet de remplissage */
+@mixin progressHeart {
+    @keyframes monte {
+        from{transform: translate(0,0);}
+        to{transform: translate(0,-20px);}
+    }
+}

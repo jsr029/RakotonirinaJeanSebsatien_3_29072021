@@ -1,0 +1,20 @@
+@media screen and (max-width:320px){
+.fonctionnement .nav {
+    width: 100%;
+    }
+    .restos__bloc--a{
+                width: 91%;
+    }
+    .ristos h1 {
+        padding-left: 0.8rem;
+    }
+    .blocmenus{
+        width: 100%;
+        .menus{
+            max-width: 95%;
+            &__bloc{
+                width: 100%;
+            }
+        }
+    }
+}

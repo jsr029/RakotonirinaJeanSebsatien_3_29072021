@@ -23,8 +23,8 @@
         .loader, .loader2{
             border-radius: 50px;
             border: 6px solid transparent;
-            border-top-color: $ternary;
-            border-bottom-color: $ternary;
+            border-top-color: $color-tertiary;
+            border-bottom-color: $color-tertiary;
         }   
         .loader::after{
             content: '';
@@ -35,8 +35,8 @@
             right:5px;
             border-radius: 50px;
             border: 6px solid transparent;
-            border-top-color: $primary;
-            border-bottom-color: $secondary;
+            border-top-color: $color-primary;
+            border-bottom-color: $color-secondary;
             opacity: 0.6;
             //le fait de placer l'animation dans le parent ralentit l'animation 
             //d'où 1s de plus pour l'enfant
@@ -51,8 +51,8 @@
             right:-6px;
             border-radius: 50px;
             border: 6px solid transparent;
-            border-top-color: $primary;
-            border-bottom-color: $secondary;
+            border-top-color: $color-primary;
+            border-bottom-color: $color-secondary;
             opacity: 0.6;
         }   
         h2{

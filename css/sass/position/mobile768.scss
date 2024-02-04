@@ -1,0 +1,29 @@
+@media screen and (max-width:768px){
+    .fonctionnement{
+        width: 100%;
+        .Fbloc{
+            width: 100%;
+            .nav {
+                width: 95%;
+            }
+        }
+    }
+    .restos__bloc{
+        column-gap: 0rem;
+        &--a{
+            width: 45%;
+            }
+    }
+    .ristos h1 {
+        padding-left: 1.2rem;
+    }
+    .blocmenus{
+        width: 100%;
+        .menus{
+            width: 95%;
+            &__bloc{
+                width: 100%;
+            }
+        }
+    }
+}

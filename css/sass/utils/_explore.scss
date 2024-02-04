@@ -1,0 +1,5 @@
+/* effet éclaircissement du bouton principal au hover */
+@mixin btnLightener($first: $color-primary, $second:$color-secondary){
+    background: linear-gradient(lighten($second, 10%), lighten($first, 2%));
+    box-shadow: 0 5px 15px darken(#cecece, 10%);
+}

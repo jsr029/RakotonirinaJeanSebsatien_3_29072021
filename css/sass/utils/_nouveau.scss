@@ -1,0 +1,14 @@
+@mixin nouveau {
+    position: absolute;
+    width: 87px;
+    height: 25px;
+    top: 15px;
+    right: 15px;
+    padding: 2px 0 0 0;
+    background: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    //font-size: 1.3em;
+    //font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}

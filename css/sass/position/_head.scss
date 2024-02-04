@@ -1,0 +1,36 @@
+.head{
+    max-width: 100%;
+    @include flexColumn;
+    &__logo{
+            width: 100%;
+            padding: 1rem 1rem 0.2rem 1rem;
+            border-bottom: 2px solid #d5d5d5;
+            text-align: center;
+            img{
+                width:155px;
+            }
+        }
+    &__location{
+        @include flexRow;
+        justify-content: center;
+        text-align: center;
+        padding: 3.5rem 0 1rem 0;
+            &--ville{
+                width: 135px;
+            }
+        }
+} 
+.explore{
+    @include flexColumn;
+    text-align: center;
+    h1{
+        padding: 1.5rem 0 1rem 0;
+    }
+    &__btn{
+        &--discover{
+            padding: 0.9rem 1rem;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px #cecece;
+        }
+    }
+}

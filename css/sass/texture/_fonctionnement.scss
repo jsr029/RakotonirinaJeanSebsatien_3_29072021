@@ -1,0 +1,21 @@
+.fonctionnement{
+    .nav{
+        background: #f6f6f6 ;
+        cursor: pointer;
+        box-shadow: 0 5px 15px #cecece;   
+         &__choice{
+            &--number{
+                background: $color-primary;
+                border-radius: 50%;
+                color: white;
+            }
+        }
+    }
+}
+.nav:hover{
+    background: #f5edff ;
+    box-shadow: 0 5px 15px darken(#cecece, 10%);
+}
+.nav:hover > .nav__choice > .nav__choice--icone i{
+    color:$color-primary;
+}

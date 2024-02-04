@@ -1,0 +1,22 @@
+@media screen and (max-width:3440px){
+.fonctionnement .nav {
+    width: 29%;
+}
+    .restos__bloc{
+        column-gap: 1rem;
+        justify-content: space-around;
+        &--a{
+            width: 22%;
+        }
+    }
+
+.ristos h1 {
+        padding-left: 2rem;
+    }
+.menus{
+        max-width:31%;
+        &__blox{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.head{
+    &__logo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        background: white;
+        @include flexRow;
+        justify-content: center;
+        max-width: 100%;
+        a{
+            position: absolute;
+            top: 35%;
+            left: 1rem;
+        }
+    }
+}
+.ristos{
+    width: 100%;
+    background: #f6f6f6;
+    h1{
+        font-family: "shrikhand", cursive;
+        padding-left: 1.5rem;
+    }
+    img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    &__titre{
+        position: relative;
+        bottom: 2rem;
+        width: 100%;
+        background: #f6f6f6;
+        @include flexRow;
+        justify-content: space-between;
+        padding: 1.5rem 0 0 0.5rem;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        .bloc_txt{
+            position: relative;
+            @include flexRow;
+            justify-content: space-between;
+            &--vide, &--cache, &--plein{
+                position: absolute;
+                bottom: -10px;
+                right: 20px;
+                width: 23px;
+                height: 23px;
+                font-size: 1.4em;
+            }
+            &--vide{
+                z-index: 400;
+            }
+            &--cache{
+                z-index: 300;
+                background: #f6f6f6;
+            }
+            &--plein{
+                z-index: 200;
+                @include heartGradient;
+            }
+            .vide:hover + .cache{
+                animation: monte 800ms linear 0s;
+                animation-fill-mode: forwards;        
+            }
+        }    
+    }
+}
